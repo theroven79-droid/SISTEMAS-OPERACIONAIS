@@ -673,3 +673,6 @@ BACKEND + API + HTML + CSS + FRONTEND JS = server.js
 
 **NEXUS OS OMEGA V3 // HYPERVISION REFINADO**  
 *Real-Time System Monitor · Local + Cloud · Node.js + Express*
+
+https://dashboard-monitoramento-1.onrender.com/
+

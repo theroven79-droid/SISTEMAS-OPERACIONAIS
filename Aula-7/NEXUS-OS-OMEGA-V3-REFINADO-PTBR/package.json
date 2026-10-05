@@ -1,0 +1,18 @@
+{
+  "name": "nexus-os-real-time-system-monitor",
+  "version": "3.1.0",
+  "description": "NEXUS OS Omega V3 refinado: dashboard de observabilidade em tempo real, em português, com 5 temas, neon adaptativo, gerenciador de tarefas somente leitura, paleta Ctrl+K robusta e comparação PC x Render.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "helmet": "^8.1.0"
+  }
+}

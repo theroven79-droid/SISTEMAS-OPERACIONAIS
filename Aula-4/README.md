@@ -48,3 +48,30 @@ O texto completo também apresenta explicações e respostas aos desafios.
 A [atividade de ramificações](Atividade-2.md) contém uma tabela com cinco sistemas: PS5, Nintendo Switch, Xbox Series S, Android e Steam Deck. O arquivo inicia uma representação em árvore do primeiro item, mas não apresenta as demais árvores.
 
 Consulte o documento para acompanhar o levantamento disponível.
+
+---
+
+## Etapas e conceitos em um fluxo
+
+```mermaid
+flowchart TD
+    A["Preparar a mídia de instalação"] --> B["Iniciar pelo dispositivo de instalação"]
+    B --> C["Reconhecer hardware e armazenamento"]
+    C --> D["Definir partições e instalar arquivos"]
+    D --> E["Configurar drivers e sistema"]
+    E --> F["Primeiro uso"]
+```
+
+| Etapa conceitual | Relação com sistemas operacionais | Material |
+|---|---|---|
+| Inicialização | Firmware, carregamento e kernel | [Atividade 1](Atividade-1.md) |
+| Reconhecimento dos dispositivos | Drivers e comunicação com o hardware | [Atividade 1](Atividade-1.md) |
+| Escolha do armazenamento | Partições e sistemas de arquivos | [Atividade 1](Atividade-1.md) |
+| Execução de programas | Processos, threads e modos de execução | [Atividade 1](Atividade-1.md) |
+| Ramificações de plataformas | Bases e influências entre sistemas | [Atividade 2](Atividade-2.md) |
+
+> **Cuidado em instalações reais:** operações de formatação e particionamento podem apagar arquivos. Faça backup e confira o disco de destino antes de executar procedimentos práticos. O conteúdo desta pasta é apresentado como **atividade acadêmica**.
+
+## Referências de navegação
+
+[Atividade 1 — instalação e conceitos](Atividade-1.md) · [Atividade 2 — ramificações](Atividade-2.md) · [Índice da disciplina](../README.md).

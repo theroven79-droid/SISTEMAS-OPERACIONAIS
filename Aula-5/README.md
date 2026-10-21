@@ -42,3 +42,34 @@ A tabela preserva as avaliações qualitativas do material da aula. A escala var
 | Jogos | Zorin OS e Linux Mint; Fedora também é citado para usuários mais experientes. |
 
 O desempenho dos jogos depende do hardware, dos drivers, da compatibilidade do jogo e da configuração do sistema.
+
+---
+
+## Árvore de decisão didática
+
+```mermaid
+flowchart TD
+    A{"Qual é a finalidade principal?"} -->|Segurança e laboratório| B["Kali Linux"]
+    A -->|PC com poucos recursos| C["Lubuntu"]
+    A -->|Migração do Windows| D["Zorin OS"]
+    A -->|Uso cotidiano| E["Linux Mint"]
+    A -->|Desenvolvimento| F["Fedora"]
+```
+
+O fluxo apenas **resume os perfis apresentados no material**, não é um benchmark ou uma classificação universal.
+
+## Links oficiais
+
+| Distribuição | Projeto | Documentação |
+|---|---|---|
+| Kali Linux | [Site](https://www.kali.org/) | [Docs](https://www.kali.org/docs/) |
+| Lubuntu | [Site](https://lubuntu.me/) | [Manual](https://manual.lubuntu.me/) |
+| Zorin OS | [Site](https://zorin.com/os/) | [Ajuda](https://help.zorin.com/) |
+| Linux Mint | [Site](https://linuxmint.com/) | [Guia](https://linuxmint-installation-guide.readthedocs.io/) |
+| Fedora | [Site](https://fedoraproject.org/) | [Docs](https://docs.fedoraproject.org/) |
+
+### Como interpretar as notas da comparação
+
+As notas de 1 a 5 no quadro original são **avaliações qualitativas da atividade**, não medições reproduzíveis. Para escolher uma distribuição de verdade, confira requisitos atuais, drivers, suporte do hardware e necessidades pessoais.
+
+[← Aula 04](../Aula-4/README.md) · [Índice da disciplina](../README.md) · [Aula 06 →](../Aula-6/README.md).

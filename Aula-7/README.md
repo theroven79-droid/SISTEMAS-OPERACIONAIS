@@ -2,6 +2,36 @@
 
 [Aula 06](../Aula-6/README.md) · [Índice da disciplina](../README.md)
 
+## 🎮 Fase 07 · Desafio de nuvem e monitoramento
+
+> **Objetivo:** Percorra a cadeia código → servidor local → telemetria → plataforma remota → análise crítica. XP indica **progresso didático opcional** e não é calculado automaticamente nem faz parte da avaliação oficial.
+
+| Checkpoint | Missão | Evidência consultável | XP |
+|---|---|---|--:|
+| Boot | Instalar dependências e iniciar o NEXUS OS | [Projeto Node.js](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md) | 15 |
+| Observação | Distinguir indicadores do host e do processo | [`server.js`](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/server.js) | 20 |
+| Cloud | Explicar configuração do Web Service | [Orientações de implantação](#implantação-no-render--parâmetros-do-projeto) | 20 |
+| Relatório | Definir variáveis para comparar duas execuções | [Resumo da aula](Resumo_Aula_07_Nuvem_Sistemas_Operacionais.md) | 25 |
+
+**Progresso manual**
+
+- [ ] Conferi o `package.json` e a versão necessária do Node.js.
+- [ ] Sei que uma instância na nuvem mostra métricas daquele ambiente.
+- [ ] Registrei as limitações de compatibilidade v2/v3 do NEXUS LINK.
+- [ ] Consigo indicar quais dados devem compor o relatório comparativo.
+
+<details>
+<summary><strong>🏅 Desafio opcional de excelência</strong></summary>
+
+Projeto final opcional: coletar duas amostras reais (local e cloud), anotar contexto e comparar CPU, memória e uptime sem assumir igualdade entre plataformas.
+
+</details>
+
+**Nota técnica:** A publicação em cloud e a comparação dependem de execução real; não há medições atuais embutidas no README.
+
+---
+
+
 Estudo de aplicações Node.js com Express, monitoramento do sistema operacional e publicação em nuvem.
 
 ## Materiais

@@ -1,21 +1,23 @@
-# 📂 Aula 06 — Material ainda não disponibilizado
+# 📂 Aula 06 — Situação do material
 
-[← Aula 05](../Aula-5/README.md) · [Índice geral](../README.md) · [Aula 07 →](../Aula-7/README.md)
+[← Aula 05](../Aula-5/README.md) · [Índice da disciplina](../README.md) · [Aula 07 →](../Aula-7/README.md)
 
-## 📌 Situação da pasta
+## 📌 Conteúdo disponível
 
-Na estrutura atualmente analisada, esta pasta possui apenas o arquivo `README.md`, sem textos, atividades ou anexos específicos da Aula 06. **Não é possível atribuir um tema à aula sem material original.**
+A pasta da Aula 06 contém atualmente **apenas este arquivo `README.md`**. Não foram encontrados, neste diretório, resumos, exercícios ou documentos complementares que permitam identificar com segurança o tema da aula.
 
-| Item | Disponibilidade |
+| Tipo de material | Situação no repositório |
 |---|---|
-| Resumo teórico | Não encontrado nesta pasta |
-| Exercícios | Não encontrados nesta pasta |
-| Material complementar | Não encontrado nesta pasta |
+| Resumo teórico | Não disponível nesta pasta |
+| Exercícios ou atividades | Não disponíveis nesta pasta |
+| Arquivos complementares | Não disponíveis nesta pasta |
 
-## 🔗 Continue a leitura
+Essa constatação se refere **somente aos arquivos do repositório**, não à realização ou à existência da aula na disciplina.
 
-- [Aula 05 — Comparativo de distribuições Linux](../Aula-5/README.md)
+## 🔗 Navegação
+
+- [Aula 05 — Comparação de distribuições Linux](../Aula-5/README.md)
 - [Aula 07 — Computação em nuvem e monitoramento](../Aula-7/README.md)
 - [Página inicial da disciplina](../README.md)
 
-> Esta página é somente um índice de navegação e estado do conteúdo. Não representa ausência da aula no curso, apenas ausência de arquivos relacionados no repositório consultado.
+Quando houver material original para a Aula 06, esta página poderá ser atualizada com referências verificáveis.

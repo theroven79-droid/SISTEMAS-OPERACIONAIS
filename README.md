@@ -2,6 +2,47 @@
 
 ![Material](https://img.shields.io/badge/Conte%C3%BAdo-7%20pastas%20de%20aulas-2F81F7) ![Projeto](https://img.shields.io/badge/Projeto-Node.js-339933?logo=nodedotjs&logoColor=white)
 
+
+## 🎓 Campanha acadêmica · Sistemas Operacionais
+
+> **Como jogar (com propósito):** cada aula é uma fase de aprendizado. Avance pelo material real, conclua um pequeno desafio e registre suas conclusões. O sistema de XP é **simbólico e manual**, sem classificação oficial ou integração com notas.
+
+| Fase | Missão de estudo | Material de referência | XP didático |
+|:--:|---|---|--:|
+| 01 · Fundamentos | Explicar kernel, modos e recursos gerenciados | [Aula 01](Aula-1/README.md) | 15 |
+| 02 · História | Comparar processamento em lote e multiprogramação | [Aula 02](Aula-2/README.md) | 20 |
+| 03 · Ecossistemas | Distinguir tipos de SO e configurar identidade Git | [Aula 03](Aula-3/README.md) | 20 |
+| 04 · Instalação | Relacionar instalação Windows a drivers e arquivos | [Aula 04](Aula-4/README.md) | 20 |
+| 05 · Decisões | Selecionar uma distribuição Linux por cenário | [Aula 05](Aula-5/README.md) | 20 |
+| 06 · Pausa informativa | Consultar o estado do material, sem inventar conteúdo | [Aula 06](Aula-6/README.md) | — |
+| 07 · Laboratório | Executar e explicar o monitor NEXUS OS | [Aula 07](Aula-7/README.md) | 35 |
+
+**Progresso acadêmico**
+
+- [ ] Entendo kernel, processos e gerenciamento de memória.
+- [ ] Sei relacionar marcos históricos às mudanças de hardware.
+- [ ] Consigo diferenciar sistemas móveis, servidores, embarcados e tempo real.
+- [ ] Consultei os exercícios de instalação e a comparação de Linux.
+- [ ] Configurei Git e consegui abrir a aplicação prática da Aula 07.
+
+<details>
+<summary><strong>🎖️ Conquistas pedagógicas</strong></summary>
+
+| Conquista | Critério |
+|---|---|
+| 🔎 Explorador de sistemas | Explicar as camadas conceituais do SO |
+| 🧩 Integrador | Relacionar arquitetura, evolução e cenários de uso |
+| 🛠️ Praticante | Executar e compreender os indicadores do NEXUS OS |
+| 📈 Analista de nuvem | Interpretar a diferença entre host local e servidor remoto |
+
+Esses marcos **não substituem as avaliações da disciplina**.
+
+</details>
+
+**💡 Boss final opcional:** produza uma comparação **com medições coletadas por você** entre execução local e em nuvem, registrando data, ambiente e limites da amostragem. O repositório não contém medições universais nem resultados automáticos.
+
+---
+
 Resumos, atividades e projeto prático da disciplina de Sistemas Operacionais.
 
 **Professor:** Me. Deivison S. Takatu

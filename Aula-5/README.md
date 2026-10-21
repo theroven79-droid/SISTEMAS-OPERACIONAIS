@@ -2,6 +2,35 @@
 
 [Aula 04](../Aula-4/README.md) · [Índice da disciplina](../README.md) · [Aula 06](../Aula-6/README.md)
 
+## 🎮 Fase 05 · Laboratório de escolhas Linux
+
+> **Objetivo:** Avalie alternativas pelo cenário de uso, não apenas por preferência visual ou notas qualitativas. XP indica **progresso didático opcional** e não é calculado automaticamente nem faz parte da avaliação oficial.
+
+| Checkpoint | Missão | Evidência consultável | XP |
+|---|---|---|--:|
+| Cenário 1 | Indicar Linux para máquina com poucos recursos | [Lubuntu](https://lubuntu.me/) | 15 |
+| Cenário 2 | Escolher para migração a partir do Windows | [Zorin OS](https://zorin.com/os/) | 15 |
+| Cenário 3 | Diferenciar segurança e desenvolvimento | [Kali](https://www.kali.org/) · [Fedora](https://fedoraproject.org/) | 20 |
+| Auditoria | Explicar limitações das notas 1–5 | [Quadro comparativo](#comparação-por-critérios) | 20 |
+
+**Progresso manual**
+
+- [ ] Consigo justificar uma escolha com base em hardware e uso.
+- [ ] Não tratei a tabela qualitativa como benchmark.
+- [ ] Consultei a documentação oficial de pelo menos uma distribuição.
+
+<details>
+<summary><strong>🏅 Desafio opcional de excelência</strong></summary>
+
+Montar uma ficha de requisitos para um computador real e verificar requisitos da distribuição em seu site oficial.
+
+</details>
+
+**Nota técnica:** As classificações reproduzem um exercício qualitativo; não devem ser apresentadas como benchmarks medidos.
+
+---
+
+
 Comparação de Kali Linux, Lubuntu, Zorin OS, Linux Mint e Fedora, considerando os perfis de uso discutidos no material da aula.
 
 ## Distribuições analisadas

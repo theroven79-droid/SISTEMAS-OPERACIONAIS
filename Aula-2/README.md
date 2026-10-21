@@ -1,36 +1,38 @@
-# 🕰️ Aula 02 — Evolução histórica dos Sistemas Operacionais
+# 🕰️ Aula 02 — Evolução histórica dos sistemas operacionais
 
-[← Aula 01](../Aula-1/README.md) · [Índice](../README.md) · [Aula 03 →](../Aula-3/README.md)
+[← Aula 01](../Aula-1/README.md) · [Índice da disciplina](../README.md) · [Aula 03 →](../Aula-3/README.md)
 
-Estudo histórico da evolução dos computadores e das técnicas utilizadas pelos sistemas operacionais, com apoio em *Sistemas Operacionais Modernos*, de Tanenbaum e Bos.
+Esta aula aborda a evolução dos computadores e dos sistemas operacionais, destacando como as mudanças no hardware influenciaram as técnicas de processamento e a interação com os usuários.
 
-## 📚 Documento principal
+## 📚 Material principal
 
-O arquivo [SO-modernos.md](SO-modernos.md) apresenta material detalhado relativo às seções 1.2.1 a 1.2.5 do livro, incluindo glossário, linha do tempo e referências a MULTICS, UNIX, MINIX, Linux, POSIX, CP/M e MS-DOS.
+O documento [`SO-modernos.md`](SO-modernos.md) desenvolve os conteúdos históricos estudados na disciplina, com base nas seções 1.2.1 a 1.2.5 de *Sistemas Operacionais Modernos*, de Andrew S. Tanenbaum e Herbert Bos. Também contém glossário e referências a sistemas como MULTICS, UNIX, MINIX, Linux, POSIX, CP/M e MS-DOS.
 
-## 📊 Panorama por gerações
+## 📊 Panorama histórico
 
-| Geração | Período aproximado do material | Características |
+| Geração | Período aproximado apresentado | Características |
 |---|---|---|
-| Primeira | 1945–1955 | Válvulas, programação em linguagem de máquina |
-| Segunda | 1955–1965 | Transistores, mainframes e processamento em lote |
-| Terceira | 1965–1980 | Circuitos integrados, multiprogramação e spooling |
-| Quarta | Desde 1980 | PCs, interfaces gráficas, redes e sistemas distribuídos |
-| Quinta | Desde 1990 | Dispositivos móveis e novos ambientes de execução |
+| Primeira | 1945–1955 | Válvulas e programação em linguagem de máquina. |
+| Segunda | 1955–1965 | Transistores, mainframes e processamento em lote. |
+| Terceira | 1965–1980 | Circuitos integrados, multiprogramação e spooling. |
+| Quarta | A partir de 1980 | Computadores pessoais, interfaces gráficas, redes e sistemas distribuídos. |
+| Quinta | A partir de 1990 | Expansão dos dispositivos móveis e de novos ambientes de execução. |
 
-As etapas são categorias didáticas e, especialmente nas gerações mais recentes, podem se sobrepor.
+Essa divisão segue o **material de estudo** e tem finalidade didática. As mudanças tecnológicas não ocorreram em períodos totalmente isolados.
 
-## 💡 Conceitos importantes
+## 💡 Conceitos em destaque
 
-- **Lote (batch):** execução de tarefas organizadas em conjuntos.
-- **Multiprogramação:** mais de um programa na memória, melhorando o aproveitamento da CPU quando há espera de entrada/saída.
-- **Spooling:** preparação e armazenamento intermediário de dados para E/S.
-- **Compartilhamento de tempo:** alternância rápida entre tarefas ou usuários.
-- **Interfaces gráficas:** interação com elementos visuais em vez de exclusivamente comandos.
+- **Processamento em lote:** execução de grupos de tarefas organizadas previamente.
+- **Multiprogramação:** manutenção de mais de um programa na memória para aproveitar a CPU enquanto outra tarefa aguarda entrada ou saída.
+- **Spooling:** armazenamento intermediário de dados destinados a dispositivos de entrada ou saída.
+- **Compartilhamento de tempo:** alternância do atendimento entre tarefas e usuários.
+- **Interface gráfica:** interação por elementos visuais, como janelas e menus.
 
 ## 📝 Atividades propostas
 
-1. Produzir um resumo em Markdown com mais de 500 linhas sobre a história dos sistemas operacionais, segundo a orientação da atividade.
-2. Ampliar a linha do tempo no Miro e exportá-la para o repositório.
+1. Produzir um resumo em Markdown sobre a história dos sistemas operacionais, conforme a orientação de extensão apresentada na aula (mais de 500 linhas).
+2. Ampliar a linha do tempo no Miro e disponibilizar sua exportação em Markdown no repositório.
 
-**Consulta complementar:** [linha do tempo da Aula 01](../Aula-1/Linha-do-tempo.md).
+**Para complementar:** [linha do tempo da Aula 01](../Aula-1/Linha-do-tempo.md).
+
+[Continuar para a Aula 03 →](../Aula-3/README.md)

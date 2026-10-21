@@ -2,6 +2,34 @@
 
 [Aula 02](../Aula-2/README.md) · [Índice da disciplina](../README.md) · [Aula 04](../Aula-4/README.md)
 
+## 🎮 Fase 03 · Sistemas e versionamento
+
+> **Meta de aprendizado:** Demonstre que você reconhece famílias de sistemas operacionais e sabe configurar a identidade persistente do Git. XP abaixo são **simbólicos**, não ligados às notas da disciplina.
+
+| Nível | Missão com evidência | Material | XP |
+|---|---|---|--:|
+| Classificar | Distinguir servidor, embarcado e tempo real | [Categorias](#tipos-de-sistemas-operacionais) | 15 |
+| Configurar | Definir nome e e-mail no Git com --global | [Comandos](#guia-prático-de-identidade-no-git) | 20 |
+| Verificar | Consultar a origem das configurações | [Comandos Git](#guia-prático-de-identidade-no-git) | 20 |
+
+**Checkpoints pessoais**
+
+- [ ] Sei diferenciar hard e soft real-time.
+- [ ] Consigo explicar `--global` em `git config`.
+- [ ] Verifiquei `user.name` e `user.email` localmente.
+
+<details>
+<summary><strong>🏅 Missão extra para aprofundamento</strong></summary>
+
+Criar um repositório de teste e inspecionar o autor do commit, sem publicar dados pessoais desnecessários.
+
+</details>
+
+**Observação:** A identidade configurada no Git não autentica sua conta no GitHub por si só.
+
+---
+
+
 Resumo das categorias de sistemas operacionais e da configuração inicial da identidade no Git.
 
 ## Tipos de sistemas operacionais

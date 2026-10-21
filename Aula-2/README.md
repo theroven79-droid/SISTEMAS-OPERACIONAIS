@@ -2,6 +2,34 @@
 
 [Aula 01](../Aula-1/README.md) · [Índice da disciplina](../README.md) · [Aula 03](../Aula-3/README.md)
 
+## 🎮 Fase 02 · Evolução tecnológica
+
+> **Meta de aprendizado:** Justifique mudanças em técnicas de execução e interface usando os acontecimentos descritos no estudo histórico. XP abaixo são **simbólicos**, não ligados às notas da disciplina.
+
+| Nível | Missão com evidência | Material | XP |
+|---|---|---|--:|
+| Linha do tempo | Ordenar gerações conforme o material | [SO-modernos.md](SO-modernos.md) | 15 |
+| Comparar | Explicar lote vs. multiprogramação | [Panorama](#panorama-histórico) | 20 |
+| Relacionar | Associar PC, redes e dispositivos móveis às mudanças da plataforma | [Estudo detalhado](SO-modernos.md) | 20 |
+
+**Checkpoints pessoais**
+
+- [ ] Sei definir spooling em contexto.
+- [ ] Consigo diferenciar multiprogramação de compartilhamento de tempo.
+- [ ] Consultei o glossário do texto expandido.
+
+<details>
+<summary><strong>🏅 Missão extra para aprofundamento</strong></summary>
+
+Criar tabela comparando duas gerações quanto a hardware, forma de interação e método de execução.
+
+</details>
+
+**Observação:** As datas são divisões aproximadas adotadas pelo material; períodos recentes podem se sobrepor.
+
+---
+
+
 Estudo da evolução dos sistemas operacionais e de sua relação com as mudanças no hardware e nas formas de utilização dos computadores.
 
 ## Material de estudo

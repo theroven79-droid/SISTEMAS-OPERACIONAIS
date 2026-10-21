@@ -1,226 +1,116 @@
-# NEXUS OS Omega V3 — Projeto da Aula 07
+# 📊 NEXUS OS Omega V3 — Projeto da Aula 07
 
-![Node.js](https://img.shields.io/badge/Node.js-%E2%89%A518-339933?logo=nodedotjs&logoColor=white) ![NEXUS](https://img.shields.io/badge/NEXUS%20OS-3.1.0-00A7B5)
+[← Aula 07](../README.md) · [↑ Índice da disciplina](../../README.md)
 
-[Voltar à Aula 07](../README.md) · [Índice da disciplina](../../README.md)
+Dashboard web em português para analisar **informações do sistema operacional, runtime Node.js, processos e requisições HTTP**. A versão declarada em [package.json](package.json) é **3.1.0**.
 
-## 🎮 Missão final · Centro de observabilidade NEXUS OS
+[![Node.js](https://img.shields.io/badge/Node.js-%E2%89%A518-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/) [![Express](https://img.shields.io/badge/Express-5.x-000000?logo=express&logoColor=white)](https://expressjs.com/) ![Versão](https://img.shields.io/badge/NEXUS%20OS-3.1.0-0b7285)
 
-> **Objetivo:** Valide a arquitetura técnica da aplicação, aprenda a consumir rotas e distinga indicadores de riscos de exposição. XP indica **progresso didático opcional** e não é calculado automaticamente nem faz parte da avaliação oficial.
+## ✨ Funcionalidades
 
-| Checkpoint | Missão | Evidência consultável | XP |
-|---|---|---|--:|
-| Iniciar | Executar `npm ci` e `npm start` | [`package.json`](package.json) | 15 |
-| Integridade | Consultar o endpoint de disponibilidade | [`/api/health`](#rotas-http) | 15 |
-| Telemetria | Observar o JSON completo e o SSE | [`server.js`](server.js) | 25 |
-| Diagnosticar | Explicar limite da integração remota | [Comparação](#relatórios-e-comparação) | 25 |
-| Auditar | Identificar informações sensíveis nas rotas | [Segurança](#saúde-e-processos) | 20 |
-
-**Progresso manual**
-
-- [ ] Abri `http://localhost:3000` com o serviço local.
-- [ ] Entendo diferença entre `/api/dashboard`, `/api/stream` e `/api/public-snapshot`.
-- [ ] Consigo explicar a ausência de autenticação e persistência.
-- [ ] Sei que o cliente remoto valida v2, enquanto o resumo publica v3.
-
-<details>
-<summary><strong>🏅 Desafio opcional de excelência</strong></summary>
-
-Desafio técnico para uma branch futura: definir e validar um contrato único para o NEXUS LINK; documentar o esquema e adicionar testes. **Ainda não implementado.**
-
-</details>
-
-**Nota técnica:** O NEXUS OS não concede pontos, conquistas ou certificados; tudo aqui representa um roteiro de verificação manual.
-
----
-
-
-Dashboard de monitoramento em português que apresenta métricas do sistema operacional, do processo Node.js e do serviço HTTP. O projeto está na versão **3.1.0**, conforme o [package.json](package.json).
-
-As métricas são coletadas no ambiente que executa o servidor. Ao acessar uma instância em nuvem, o painel apresenta os recursos visíveis àquela instância.
-
-## Estrutura
-
-| Arquivo | Função |
+| Módulo | Informações |
 |---|---|
-| [server.js](server.js) | Servidor Express, coleta de métricas, APIs, HTML, CSS e JavaScript da interface. |
-| [package.json](package.json) | Dependências, scripts e versão mínima do Node.js. |
-| [package-lock.json](package-lock.json) | Versões das dependências resolvidas pelo npm. |
-| [.gitignore](.gitignore) | Regras de exclusão de dependências, arquivos de ambiente e logs. |
+| CPU | Utilização, dados por núcleo, média, pico e carga |
+| Memória | RAM e memória do processo Node.js |
+| Runtime | Node/V8, event loop, garbage collection e heap |
+| Sistema e rede | Hostname, plataforma, kernel, arquitetura, uptime e interfaces |
+| HTTP | Volume e duração de requisições do próprio Express |
+| Processos | Lista, filtro e ordenação, sem ações de encerramento |
+| Arquivos | Quantidade, tamanho e extensão dos arquivos do projeto |
+| Armazenamento | Espaço do volume, quando suportado |
+| Relatórios | JSON, comparação por importação e CSV de sessões |
 
-Toda a aplicação está concentrada em `server.js`.
+A interface inclui **cinco temas** (Cyber Cyan, Quantum Violet, Matrix Emerald, Crimson Reactor e Solar Gold), intensidade de neon, modo observação, apresentação, tela cheia, pausa e paleta `Ctrl+K` / `Cmd+K`.
 
-## Instalação e execução
+## 🧱 Arquitetura
 
-Requisitos: **Node.js 18 ou superior** e npm.
+```mermaid
+flowchart LR
+    A[Sistema operacional] --> B[server.js]
+    B --> C[API Express]
+    C --> D[Dashboard web]
+    B --> E[Streaming SSE]
+    E --> D
+    D --> F[Exportação de dados]
+```
 
-Execute na pasta que contém este README:
+A aplicação está concentrada em [server.js](server.js), que contém servidor, APIs e interface (HTML/CSS/JavaScript). O arquivo [package.json](package.json) define Express `^5.1.0`, Helmet `^8.1.0`, Node.js `>=18` e scripts de execução.
+
+## ⚙️ Instalar e executar
+
+Na pasta deste README:
 
 ```bash
 npm ci
 npm start
 ```
 
-O servidor escuta em `0.0.0.0` e utiliza a porta 3000 por padrão.
+Servidor: `0.0.0.0`, porta padrão `3000` (ou valor de `PORT`). Abra `http://localhost:3000`.
 
-### Desenvolvimento
+Para recarga automática durante o desenvolvimento:
 
 ```bash
 npm run dev
 ```
 
-O script de desenvolvimento executa `node --watch server.js`.
+Esse script utiliza `node --watch server.js`. Não há script de teste automatizado declarado.
 
-### Outra porta
+## 🌐 Rotas HTTP
 
-Em um terminal Bash:
+| Método | Endpoint | Finalidade |
+|---|---|---|
+| `GET` | `/` | Interface principal |
+| `GET` | `/api/dashboard` | Telemetria em JSON |
+| `GET` | `/api/public-snapshot` | Resumo no esquema `nexus-os-live-v3` |
+| `OPTIONS` | `/api/public-snapshot` | Preflight (204) |
+| `GET` | `/api/stream` | Eventos SSE `telemetry` e `fault` |
+| `GET` | `/api/health` | Resposta com status do serviço |
 
 ```bash
-PORT=3001 npm start
+curl http://localhost:3000/api/health
+curl http://localhost:3000/api/dashboard
+curl -N http://localhost:3000/api/stream
 ```
 
-As dependências declaradas são Express `^5.1.0` e Helmet `^8.1.0`.
+Interrompa `curl -N` com `Ctrl+C` após a coleta desejada.
 
-## Métricas e informações
+## ⏱️ Atualização e retenção
 
-| Grupo | Informações disponíveis |
+| Componente | Intervalo / limite conforme código |
 |---|---|
-| CPU | Uso médio e por núcleo, média e pico recentes, modelo, clock e carga média. |
-| Memória | RAM total, livre e utilizada; RSS, heap e memória externa do processo. |
-| Runtime | Versões do Node.js e do V8, uso e atraso do event loop, eventos de coleta de lixo e estatísticas do heap. |
-| Sistema operacional | Hostname, plataforma, kernel, arquitetura e tempo de atividade. |
-| Rede | Interfaces e endereços de rede, com identificação de um endereço IPv4 principal. |
-| HTTP | Quantidade de requisições, duração média, classes de status e taxa de erros do próprio serviço. |
-| Projeto | Quantidade de arquivos e diretórios, tamanho e distribuição por extensão. |
-| Armazenamento | Espaço do volume em que o projeto está localizado, quando a coleta é suportada. |
-| Processos | Nome, PID, CPU e memória dos processos visíveis ao sistema. |
-| Sessão | Médias, picos, percentis e desvios em relação às amostras recentes. |
+| Amostras de CPU | Aproximadamente 1 segundo, histórico de até 60 |
+| SSE | 1,5 segundo |
+| Perfis da interface | 1 s, 1,5 s, 3 s e 5 s |
+| Processos | Atualização a cada 5 s, até 14 itens |
+| Análise de arquivos | Cache de 30 s |
+| Histórico no servidor | Até 180 amostras |
+| Gravação no navegador | Até 600 registros, exportáveis em CSV |
 
-A análise de arquivos ignora `node_modules` e `.git`. O indicador HTTP acompanha as requisições do Express; ele não mede a largura de banda de todas as interfaces.
+Os dados históricos mantidos em memória não são preservados depois de reiniciar o servidor. Preferências de interface são salvas no `localStorage`.
 
-## Rotas HTTP
+## ⚠️ Limitações conhecidas
 
-| Método | Caminho | Resposta |
-|---|---|---|
-| GET | `/` | Dashboard HTML. |
-| GET | `/api/dashboard` | JSON com a telemetria completa em `data`. |
-| GET | `/api/public-snapshot` | Resumo de telemetria com o esquema `nexus-os-live-v3`. |
-| OPTIONS | `/api/public-snapshot` | Resposta 204 para a consulta entre origens. |
-| GET | `/api/stream` | Fluxo SSE com eventos `telemetry` e eventos `fault` em caso de falha na coleta. |
-| GET | `/api/health` | JSON de disponibilidade com `success: true` e `status: "online"`. |
+- **NEXUS LINK:** `publicSnapshot` devolve o esquema `nexus-os-live-v3`, mas o cliente `fetchRemote` valida `nexus-os-live-v2`. Duas instâncias da mesma versão não estabelecem a conexão remota diretamente.
+- **Dados sensíveis:** rotas de telemetria não exigem autenticação e podem exibir informações sobre host, interfaces e processos.
+- **Medição contextual:** uma instância em nuvem mostra os dados acessíveis ao servidor/container, não ao computador do visitante.
+- **Processos:** consulta via PowerShell (Windows) ou `ps` (Linux); pode apresentar apenas o processo Node.js se a enumeração falhar. No Windows, CPU de processo corresponde ao tempo acumulado; no Linux, a percentual obtido por `ps`.
+- **Recursos externos:** Chart.js, Lucide e fontes são carregados por terceiros; sem Chart.js, permanecem os dados textuais, mas não os gráficos.
+- **Pontuação de saúde:** classificação heurística do projeto, não teste padronizado de desempenho.
 
-## Atualização da telemetria
+## ☁️ Publicação no Render
 
-| Componente | Intervalo ou limite |
+| Campo | Configuração |
 |---|---|
-| CPU | Amostragem a cada 1 segundo e histórico de até 60 valores. |
-| SSE | Atualização a cada 1,5 segundo. |
-| Perfis da interface | 1 s, 1,5 s, 3 s ou 5 s. |
-| Lista de processos | Atualização a cada 5 segundos, com até 14 itens. |
-| Análise de arquivos | Cache de 30 segundos. |
-| Sessão no servidor | Até 180 amostras. |
-| Gravação no navegador | Até 600 registros, exportáveis em CSV. |
-
-O perfil de 1,5 segundo utiliza SSE quando disponível. Os demais perfis utilizam consultas periódicas, que também servem como alternativa em caso de falha no fluxo SSE. Os históricos ficam em memória.
-
-## Interface
-
-- Cinco temas: Cyber Cyan, Quantum Violet, Matrix Emerald, Crimson Reactor e Solar Gold.
-- Neon suave, intenso ou desligado.
-- Modo de observação com reforço de contraste.
-- Pausa da telemetria, apresentação, tela cheia e controle dos efeitos visuais.
-- Filtro de processos por nome ou PID e ordenação por CPU, memória, nome ou PID.
-- Paleta de comandos com `Ctrl+K` ou `Cmd+K`, navegação pelas teclas de seta, execução com Enter e fechamento com Esc.
-
-As preferências de tema, neon, perfil e ordenação são salvas no `localStorage` do navegador.
-
-## Relatórios e comparação
-
-A interface permite exportar ou copiar um relatório JSON no formato `nexus-os-report-v1`. Dois relatórios desse formato podem ser importados para comparação. As sessões gravadas no navegador são exportadas em CSV.
-
-O NEXUS LINK consulta a rota `/api/public-snapshot` de outra instância. Na versão atual, existe uma diferença entre os esquemas do servidor e do cliente remoto: o servidor retorna `nexus-os-live-v3`, enquanto `fetchRemote` aceita `nexus-os-live-v2`. Por isso, o cliente rejeita o resumo de outra instância que executa este mesmo código.
-
-## Saúde e processos
-
-A pontuação de saúde combina CPU, memória, runtime, event loop e API. É um indicador heurístico do próprio dashboard, com as classificações ÓTIMO, SAUDÁVEL, ATENÇÃO e CRÍTICO.
-
-O observador de processos permite apenas a consulta de informações. Ele utiliza PowerShell no Windows e `ps` no Linux. Se a enumeração não estiver disponível, apresenta apenas o processo Node.js. No Windows, o campo de CPU corresponde ao tempo acumulado de uso da CPU; no Linux, corresponde ao percentual retornado por `ps`.
-
-As rotas de leitura não possuem autenticação. A telemetria inclui informações do ambiente, como hostname, interfaces e processos; o resumo público contém um conjunto menor de campos.
-
-## Recursos visuais
-
-Chart.js é carregado de `cdn.jsdelivr.net`; Lucide, de `unpkg.com`; e as fontes, de `fonts.googleapis.com` e `fonts.gstatic.com`. Os gráficos dependem do carregamento do Chart.js; quando ele não está disponível, o código mantém a atualização dos indicadores textuais.
-
-## Publicação no Render
-
-Para um Web Service configurado com esta pasta como diretório da aplicação:
-
-| Campo | Comando |
-|---|---|
+| Root Directory | Diretório que contém este projeto |
 | Build Command | `npm ci` |
 | Start Command | `npm start` |
+| Porta | `PORT` fornecida pela plataforma |
 
-O servidor utiliza a variável `PORT` fornecida pelo ambiente. Para a apresentação no OBS descrita no material do projeto, execute a aplicação e configure sua página como fonte de navegador.
+O projeto também pode ser utilizado como fonte do tipo **Navegador no OBS Studio**, conforme a proposta de apresentação da aula. Os dados exportados seguem o formato `nexus-os-report-v1` e podem ser comparados por importação de dois relatórios.
 
-## Conferir o servidor
+## 📚 Referências
 
-Com o processo iniciado, execute em outro terminal:
-
-```bash
-curl --fail --silent http://127.0.0.1:3000/api/health
-curl --fail --silent http://127.0.0.1:3000/api/dashboard
-```
-
-Para observar o fluxo SSE, use `curl -N http://127.0.0.1:3000/api/stream` e interrompa a consulta com `Ctrl+C` após receber um evento `telemetry`. Se utilizar outra porta, ajuste os comandos.
-
----
-
-## Visão de arquitetura
-
-```mermaid
-flowchart TB
-    OS["SO · CPU, memória, interfaces e processos"] --> N["Node.js · server.js"]
-    N --> API["Express · APIs de telemetria"]
-    N --> SSE["Fluxo SSE"]
-    API --> UI["Dashboard web"]
-    SSE --> UI
-    UI --> EXP["Relatórios JSON e CSV"]
-    API --> R["Consulta remota · esquema v3"]
-    R -. "Cliente atual exige v2" .-> W["Incompatibilidade conhecida"]
-```
-
-## Primeiro acesso em cinco comandos
-
-Na pasta raiz do repositório da disciplina:
-
-```bash
-cd Aula-7/NEXUS-OS-OMEGA-V3-REFINADO-PTBR
-npm ci
-npm start
-```
-
-Abra **http://localhost:3000** e confira **http://localhost:3000/api/health**. Interrompa o processo com `Ctrl+C`.
-
-## FAQ técnico
-
-| Pergunta | Resposta baseada na implementação |
-|---|---|
-| O monitor mede meu computador quando uso um site remoto? | Não. Mede o host/container do **servidor Node.js**. |
-| Existe banco de dados? | Não há persistência de amostras em banco; o histórico no servidor é temporário. |
-| O observador encerra processos? | Não; opera em **somente leitura**. |
-| Há autenticação nos endpoints? | Não; trate a exposição de telemetria com cuidado. |
-| O NEXUS LINK conecta duas cópias desta versão? | Não diretamente: a API publica esquema v3 e o cliente remoto valida v2. |
-| A aplicação requer `npm run build`? | Não. O script `start` executa `node server.js`. |
-| O Render pode atribuir uma porta diferente? | Sim. O servidor utiliza `process.env.PORT`. |
-
-## Fontes técnicas e documentação
-
-| Assunto | Referência |
-|---|---|
-| Código e contratos das rotas | [server.js](server.js) |
-| Dependências, versão e scripts | [package.json](package.json) |
-| Contexto da atividade | [Aula 07](../README.md) |
-| SSE no navegador | [MDN — Server-sent events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events) |
-| Node.js e informações do host | [Node.js `os`](https://nodejs.org/api/os.html) |
-| Deploy de aplicações Express | [Render Docs](https://render.com/docs/deploy-node-express-app) |
+- [Código-fonte](server.js) · [Dependências e scripts](package.json)
+- [Material da Aula 07](../Resumo_Aula_07_Nuvem_Sistemas_Operacionais.md)
+- [Server-Sent Events — MDN](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events)
+- [Deploy Node/Express — Render](https://render.com/docs/deploy-node-express-app)

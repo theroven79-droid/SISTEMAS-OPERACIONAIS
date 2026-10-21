@@ -1,33 +1,27 @@
-# ☁️ Aula 07 — Nuvem e Sistemas Operacionais
+# ☁️ Aula 07 — Sistemas operacionais e computação em nuvem
 
 [← Aula 06](../Aula-6/README.md) · [Índice da disciplina](../README.md)
 
-Estudo de Node.js, Express, indicadores do sistema operacional e publicação de serviços web em nuvem, culminando num **dashboard de observabilidade**.
+A aula aborda o uso de **Node.js e Express** para consultar informações do sistema operacional e disponibilizá-las em uma aplicação web. O material também propõe publicar o projeto em nuvem e comparar diferentes ambientes de execução.
 
-## 📂 Materiais da aula
+## 📂 Materiais disponíveis
 
-| Arquivo | Descrição |
+| Arquivo | Conteúdo |
 |---|---|
-| [Resumo da Aula 07](Resumo_Aula_07_Nuvem_Sistemas_Operacionais.md) | Express, CORS, Render, comparação entre ambientes e deploy |
-| [README do NEXUS OS](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md) | Arquitetura, instalação, API e limitações |
-| [server.js](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/server.js) | Implementação das rotas, coleta e interface |
-| [package.json](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/package.json) | Scripts, dependências e versão mínima do Node.js |
+| [Resumo da Aula 07](Resumo_Aula_07_Nuvem_Sistemas_Operacionais.md) | Conceitos de nuvem, Express, CORS, Render e comparação entre ambientes. |
+| [README do NEXUS OS](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md) | Instalação, arquitetura, APIs e limitações conhecidas. |
+| [`server.js`](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/server.js) | Implementação do servidor e da interface. |
+| [`package.json`](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/package.json) | Dependências, requisitos e scripts de execução. |
 
-## 🎯 Objetivo técnico
+## 🎯 Objetivo prático
 
-Evoluir o conceito de um monitor básico para uma aplicação que observe **CPU, memória, runtime, rede, processos e tempo de atividade**, comparando o que está disponível num computador local com o que pode ser observado num serviço em nuvem.
+O projeto NEXUS OS apresenta indicadores relacionados a CPU, memória, rede, processos, ambiente Node.js e tempo de atividade. Ao utilizá-lo localmente e em um serviço de nuvem, é possível estudar as diferenças entre os recursos expostos em cada ambiente.
 
-```mermaid
-flowchart LR
-    A[Projeto Node.js] --> B[Execução local]
-    B --> C[Deploy em nuvem]
-    C --> D[Coleta de métricas]
-    D --> E[Relatório comparativo]
-```
+**Importante:** a aplicação sempre coleta informações do ambiente em que o **servidor Node.js** está executando. Os dados exibidos em uma instância remota não são os do computador do visitante.
 
-## ⚙️ Executar o NEXUS OS
+## ⚙️ Como executar o NEXUS OS
 
-**Pré-requisito:** Node.js 18+ e npm. A partir desta pasta:
+Com Node.js 18 ou superior e npm instalados, execute a partir da pasta `Aula-7`:
 
 ```bash
 cd NEXUS-OS-OMEGA-V3-REFINADO-PTBR
@@ -35,29 +29,29 @@ npm ci
 npm start
 ```
 
-Acesse `http://localhost:3000` ou a porta definida em `PORT`. Para desenvolvimento, o manifesto possui o script `npm run dev`.
+Acesse **http://localhost:3000** no navegador. É possível utilizar outra porta por meio de `PORT`. Para desenvolvimento, o projeto também define `npm run dev`.
 
-## ☁️ Configuração de Web Service no Render
+## ☁️ Configuração sugerida no Render
 
-Caso o serviço seja publicado diretamente a partir do repositório da disciplina:
+Para publicar o serviço diretamente a partir deste repositório, as configurações do projeto são:
 
-| Parâmetro | Valor sugerido pelo projeto |
+| Campo | Valor |
 |---|---|
 | Root Directory | `Aula-7/NEXUS-OS-OMEGA-V3-REFINADO-PTBR` |
 | Build Command | `npm ci` |
 | Start Command | `npm start` |
-| Porta | Variável `PORT` do ambiente |
+| Porta | Variável `PORT` fornecida pelo ambiente |
 
-**Endereço registrado no material:** [Dashboard no Render](https://dashboard-monitoramento-1.onrender.com/). É uma referência registrada, não uma confirmação de disponibilidade atual.
+**Endereço registrado no material:** [Dashboard no Render](https://dashboard-monitoramento-1.onrender.com/). O link é uma referência existente; não comprova a disponibilidade atual do serviço.
 
-## 📊 Relatório entre ambientes
+## 📊 Comparação entre ambientes
 
-O material propõe observar facilidade de publicação, plataforma e sistema operacional, CPU, RAM, arquitetura, versão do Node.js, IP, uptime e recursos do serviço.
+O roteiro da aula propõe comparar plataforma, sistema operacional, CPU, memória, arquitetura, versão do Node.js, interfaces de rede e tempo de atividade. Para interpretar os resultados, registre o **ambiente, a data da coleta e as condições de execução**.
 
-Para uma comparação válida, registre **data da coleta, plataforma, carga de trabalho e limites do host/container**. As métricas do servidor remoto não equivalem às do navegador do visitante.
+## ⚠️ Limitações importantes
 
-## ⚠️ Pontos de atenção
+A conexão remota NEXUS LINK apresenta uma incompatibilidade entre os esquemas `nexus-os-live-v3` e `nexus-os-live-v2`. Além disso, as rotas de telemetria não possuem autenticação e podem expor detalhes do ambiente.
 
-O NEXUS LINK presente no dashboard possui incompatibilidade de esquema entre resumo v3 e cliente v2. A aplicação também expõe telemetria sem autenticação. Consulte as limitações no [guia técnico do NEXUS OS](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md).
+Consulte o [README técnico do NEXUS OS](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md) antes de publicar o serviço.
 
-**Referências:** [Render Docs](https://render.com/docs/deploy-node-express-app) · [Node.js `os`](https://nodejs.org/api/os.html).
+**Referências:** [Render — Deploy Node/Express](https://render.com/docs/deploy-node-express-app) · [Node.js — Módulo `os`](https://nodejs.org/api/os.html).

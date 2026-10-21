@@ -1,105 +1,44 @@
-# Aula 04 — Instalação e ramificações de Sistemas Operacionais
+# 🛠️ Aula 04 — Instalação e ramificações de Sistemas Operacionais
 
-[Aula 03](../Aula-3/README.md) · [Índice da disciplina](../README.md) · [Aula 05](../Aula-5/README.md)
+[← Aula 03](../Aula-3/README.md) · [Índice](../README.md) · [Aula 05 →](../Aula-5/README.md)
 
-## 🎮 Fase 04 · Engenharia da instalação
+Conjunto de atividades que relaciona a instalação do Windows aos componentes do sistema operacional e investiga famílias de plataformas.
 
-> **Meta de aprendizado:** Relacione um processo de instalação de SO a kernel, armazenamento e drivers. XP abaixo são **simbólicos**, não ligados às notas da disciplina.
+## 📂 Materiais
 
-| Nível | Missão com evidência | Material | XP |
-|---|---|---|--:|
-| Planejar | Identificar etapas de preparação e inicialização | [Atividade 1](Atividade-1.md) | 15 |
-| Relacionar | Ligar particionamento ao sistema de arquivos | [Atividade 1](Atividade-1.md) | 20 |
-| Investigar | Comparar ramificações de plataformas | [Atividade 2](Atividade-2.md) | 20 |
-
-**Checkpoints pessoais**
-
-- [ ] Diferenciei kernel, processo e thread.
-- [ ] Sei indicar em que etapa drivers entram no fluxo de instalação.
-- [ ] Consultei os critérios de avaliação existentes no material.
-
-<details>
-<summary><strong>🏅 Missão extra para aprofundamento</strong></summary>
-
-Construir uma tabela própria com etapa, componente do SO, falha possível e medida preventiva.
-
-</details>
-
-**Observação:** Não é necessário formatar um computador real para completar esta missão; operações de partição podem apagar dados.
-
----
-
-
-Atividades sobre a instalação do Windows e as relações entre sistemas operacionais.
-
-## Materiais
-
-| Arquivo | Tema |
+| Arquivo | Conteúdo |
 |---|---|
-| [Atividade-1.md](Atividade-1.md) | Formatação e instalação do Windows, relacionadas aos conceitos de sistemas operacionais. |
-| [Atividade-2.md](Atividade-2.md) | Levantamento de bases e influências de sistemas operacionais. |
+| [Atividade-1.md](Atividade-1.md) | Instalação do Windows, kernel, processos, threads, arquivos e drivers |
+| [Atividade-2.md](Atividade-2.md) | Levantamento de bases e influências entre sistemas operacionais |
 
-## Atividade 1 — Instalação do Windows
+## ⚙️ Atividade 1 — Instalação do Windows
 
-A atividade descreve o percurso entre a preparação da mídia de instalação e o primeiro uso do Windows. As etapas incluem inicialização pelo pendrive, reconhecimento do hardware, escolha da unidade, particionamento ou formatação, cópia dos arquivos e configuração dos drivers.
+```mermaid
+flowchart LR
+    A[Mídia de instalação] --> B[Boot]
+    B --> C[Discos e partições]
+    C --> D[Instalação de arquivos]
+    D --> E[Drivers e configuração]
+```
 
-A explicação relaciona esse processo a sete temas:
+O texto relaciona o processo de instalação a **sete temas**: componentes do SO, kernel, modos de execução, processos, diferença entre programa/processo/thread, sistemas de arquivos e dispositivos de E/S.
 
-1. Componentes do sistema operacional.
-2. Kernel.
-3. Modos de execução.
-4. Processos.
-5. Diferenças entre programa, processo e thread.
-6. Sistema de arquivos.
-7. Dispositivos de entrada e saída e seus drivers.
-
-### Entrega
-
-O documento solicita a descrição do processo, a explicação dos conceitos, uma linha do tempo, uma tabela que relacione as etapas aos conceitos e as respostas ao desafio final.
-
-### Critérios de avaliação
+### Critérios de avaliação registrados
 
 | Critério | Pontos |
 |---|---:|
 | Descrição do processo | 2 |
-| Componentes do sistema operacional | 2 |
+| Componentes do SO | 2 |
 | Relação entre os conceitos | 3 |
 | Linha do tempo e tabela | 1 |
 | Desafio final | 1 |
 | Organização e Markdown | 1 |
 | **Total** | **10** |
 
-O texto completo também apresenta explicações e respostas aos desafios.
+O próprio arquivo da atividade contém explicações e respostas aos desafios.
 
-## Atividade 2 — Ramificações
+> **Segurança:** formatar ou particionar discos pode apagar dados. O estudo do procedimento não requer formatar um computador real.
 
-A [atividade de ramificações](Atividade-2.md) contém uma tabela com cinco sistemas: PS5, Nintendo Switch, Xbox Series S, Android e Steam Deck. O arquivo inicia uma representação em árvore do primeiro item, mas não apresenta as demais árvores.
+## 🌳 Atividade 2 — Ramificações
 
-Consulte o documento para acompanhar o levantamento disponível.
-
----
-
-## Etapas e conceitos em um fluxo
-
-```mermaid
-flowchart TD
-    A["Preparar a mídia de instalação"] --> B["Iniciar pelo dispositivo de instalação"]
-    B --> C["Reconhecer hardware e armazenamento"]
-    C --> D["Definir partições e instalar arquivos"]
-    D --> E["Configurar drivers e sistema"]
-    E --> F["Primeiro uso"]
-```
-
-| Etapa conceitual | Relação com sistemas operacionais | Material |
-|---|---|---|
-| Inicialização | Firmware, carregamento e kernel | [Atividade 1](Atividade-1.md) |
-| Reconhecimento dos dispositivos | Drivers e comunicação com o hardware | [Atividade 1](Atividade-1.md) |
-| Escolha do armazenamento | Partições e sistemas de arquivos | [Atividade 1](Atividade-1.md) |
-| Execução de programas | Processos, threads e modos de execução | [Atividade 1](Atividade-1.md) |
-| Ramificações de plataformas | Bases e influências entre sistemas | [Atividade 2](Atividade-2.md) |
-
-> **Cuidado em instalações reais:** operações de formatação e particionamento podem apagar arquivos. Faça backup e confira o disco de destino antes de executar procedimentos práticos. O conteúdo desta pasta é apresentado como **atividade acadêmica**.
-
-## Referências de navegação
-
-[Atividade 1 — instalação e conceitos](Atividade-1.md) · [Atividade 2 — ramificações](Atividade-2.md) · [Índice da disciplina](../README.md).
+O material apresenta uma tabela sobre **PS5, Nintendo Switch, Xbox Series S, Android e Steam Deck**, relacionando tecnologias e sistemas de base. O arquivo inicia a representação em árvore do primeiro item, mas não inclui as árvores completas dos demais sistemas.

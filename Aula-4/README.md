@@ -2,6 +2,34 @@
 
 [Aula 03](../Aula-3/README.md) · [Índice da disciplina](../README.md) · [Aula 05](../Aula-5/README.md)
 
+## 🎮 Fase 04 · Engenharia da instalação
+
+> **Meta de aprendizado:** Relacione um processo de instalação de SO a kernel, armazenamento e drivers. XP abaixo são **simbólicos**, não ligados às notas da disciplina.
+
+| Nível | Missão com evidência | Material | XP |
+|---|---|---|--:|
+| Planejar | Identificar etapas de preparação e inicialização | [Atividade 1](Atividade-1.md) | 15 |
+| Relacionar | Ligar particionamento ao sistema de arquivos | [Atividade 1](Atividade-1.md) | 20 |
+| Investigar | Comparar ramificações de plataformas | [Atividade 2](Atividade-2.md) | 20 |
+
+**Checkpoints pessoais**
+
+- [ ] Diferenciei kernel, processo e thread.
+- [ ] Sei indicar em que etapa drivers entram no fluxo de instalação.
+- [ ] Consultei os critérios de avaliação existentes no material.
+
+<details>
+<summary><strong>🏅 Missão extra para aprofundamento</strong></summary>
+
+Construir uma tabela própria com etapa, componente do SO, falha possível e medida preventiva.
+
+</details>
+
+**Observação:** Não é necessário formatar um computador real para completar esta missão; operações de partição podem apagar dados.
+
+---
+
+
 Atividades sobre a instalação do Windows e as relações entre sistemas operacionais.
 
 ## Materiais

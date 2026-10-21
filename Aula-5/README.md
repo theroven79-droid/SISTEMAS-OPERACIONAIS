@@ -8,10 +8,10 @@ Comparação de Kali Linux, Lubuntu, Zorin OS, Linux Mint e Fedora, considerando
 
 | Distribuição | Foco apresentado | Vantagens destacadas | Pontos de atenção |
 |---|---|---|---|
-| [Kali Linux](https://www.kali.org/) | Segurança da informação, testes de invasão, análise de redes e forense digital. | Ferramentas de segurança e comunidade. | Pode exigir familiaridade com Linux e não é apresentada como opção principal para uso doméstico ou jogos. |
+| [Kali Linux](https://www.kali.org/) | Segurança da informação, testes de invasão, análise de redes e forense digital. | Ferramentas de segurança e comunidade. | Pode exigir familiaridade com o Linux; não é a opção principal apresentada para uso doméstico ou jogos. |
 | [Lubuntu](https://lubuntu.me/) | Baixo consumo de recursos e uso em computadores modestos. | Leveza, baixo consumo de RAM e base Ubuntu. | Interface mais simples e menos recursos integrados. |
-| [Zorin OS](https://zorin.com/os/) | Facilidade de uso e adaptação de usuários vindos do Windows. | Interface amigável, base Ubuntu e uso doméstico. | Alguns recursos dependem da versão escolhida; pode consumir mais recursos que distribuições leves. |
-| [Linux Mint](https://linuxmint.com/) | Uso diário, estabilidade e produtividade. | Interface tradicional, facilidade de aprendizado e equilíbrio entre recursos e desempenho. | Não é a opção mais leve; algumas tecnologias podem chegar mais tarde. |
+| [Zorin OS](https://zorin.com/os/) | Facilidade de uso e adaptação para usuários vindos do Windows. | Interface amigável, base Ubuntu e uso doméstico. | Alguns recursos dependem da versão escolhida; pode consumir mais recursos do que distribuições leves. |
+| [Linux Mint](https://linuxmint.com/) | Uso diário, estabilidade e produtividade. | Interface tradicional, facilidade de aprendizado e equilíbrio entre recursos e desempenho. | Não é a opção mais leve e pode receber algumas tecnologias mais tarde. |
 | [Fedora](https://fedoraproject.org/) | Desenvolvimento e tecnologias recentes. | Ambiente para programação, comunidade e relação com o ecossistema Red Hat. | Atualizações frequentes e possíveis ajustes conforme o hardware. |
 
 ## Comparação por critérios
@@ -35,7 +35,7 @@ A tabela preserva as avaliações qualitativas do material da aula. A escala var
 |---|---|
 | Segurança da informação e testes de invasão | Kali Linux |
 | Computador antigo ou com poucos recursos | Lubuntu |
-| Primeiro contato com Linux e migração do Windows | Zorin OS |
+| Primeiro contato com o Linux e migração do Windows | Zorin OS |
 | Estudos e tarefas diárias | Linux Mint e Zorin OS |
 | Programação e trabalho técnico | Fedora |
 | Trabalho administrativo | Linux Mint |

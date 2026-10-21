@@ -2,7 +2,7 @@
 
 [Aula 02](../Aula-2/README.md) · [Índice da disciplina](../README.md) · [Aula 04](../Aula-4/README.md)
 
-Resumo das categorias de sistemas operacionais e da configuração inicial de identidade no Git.
+Resumo das categorias de sistemas operacionais e da configuração inicial da identidade no Git.
 
 ## Tipos de sistemas operacionais
 
@@ -34,4 +34,4 @@ git config --global user.name "Seu nome"
 git config --global user.email "seu-email@exemplo.com"
 ```
 
-Substitua o nome e o e-mail pelos seus dados. A opção `--global` aplica a configuração ao usuário do Git.
+Substitua o nome e o e-mail pelos seus dados. A opção `--global` define a identidade padrão do usuário do Git.

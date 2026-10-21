@@ -11,7 +11,7 @@ Estudo de aplicações Node.js com Express, monitoramento do sistema operacional
 | [Resumo da aula](Resumo_Aula_07_Nuvem_Sistemas_Operacionais.md) | Express, CORS, Render, deploy e comparação entre ambientes. |
 | [Projeto NEXUS OS](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md) | Instruções de instalação, execução e uso do dashboard. |
 | [Código da aplicação](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/server.js) | Servidor, coleta de métricas e interface do NEXUS OS. |
-| [Manifesto npm](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/package.json) | Dependências, scripts e requisito de Node.js. |
+| [Manifesto npm](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/package.json) | Dependências, scripts e versão exigida do Node.js. |
 
 ## Objetivo da aula
 
@@ -29,7 +29,7 @@ npm ci
 npm start
 ```
 
-O projeto utiliza `server.js` como entrada e Express e Helmet como dependências. O servidor usa a porta 3000 por padrão. Para desenvolvimento com reinício automático, execute `npm run dev` na pasta da aplicação.
+O arquivo de entrada do projeto é `server.js`, e suas dependências são Express e Helmet. O servidor usa a porta 3000 por padrão. Para desenvolvimento com reinício automático, execute `npm run dev` na pasta da aplicação.
 
 ## Recursos do projeto
 
@@ -38,14 +38,14 @@ O projeto utiliza `server.js` como entrada e Express e Helmet como dependências
 - Observação de processos em modo somente leitura.
 - Cinco temas, ajustes de neon e modo de observação.
 - Paleta de comandos.
-- Exportação de relatórios JSON e sessões CSV.
+- Exportação de relatórios em JSON e de sessões em CSV.
 - Comparação por importação de relatórios.
 
 Os endpoints e a limitação de compatibilidade do link remoto estão descritos no [guia do NEXUS OS](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md).
 
 ## Relatório comparativo
 
-O resumo da aula propõe comparar facilidade de deploy, sistema operacional, CPU, memória, arquitetura, versão do Node.js, IP, tempo de atividade e recursos das plataformas.
+O resumo da aula propõe comparar a facilidade de deploy, o sistema operacional, a CPU, a memória, a arquitetura, a versão do Node.js, o IP, o tempo de atividade e os recursos das plataformas.
 
 Preencha o relatório com dados coletados em cada ambiente. A comparação deve identificar a plataforma e o contexto da coleta.
 

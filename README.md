@@ -32,7 +32,7 @@ A [Aula 01](Aula-1/README.md) apresenta os fundamentos. A [Aula 02](Aula-2/SO-mo
 
 O projeto da Aula 07 é um dashboard desenvolvido com Node.js, Express e Helmet. Ele apresenta informações do sistema operacional e do processo Node.js, como CPU, memória, rede e tempo de atividade.
 
-Com Node.js 18 ou superior e npm disponíveis, execute a partir da raiz deste repositório:
+Com Node.js 18 ou superior e npm disponíveis, execute os comandos a partir da raiz deste repositório:
 
 ```bash
 cd Aula-7/NEXUS-OS-OMEGA-V3-REFINADO-PTBR
@@ -40,7 +40,7 @@ npm ci
 npm start
 ```
 
-O servidor utiliza a porta 3000 por padrão. As instruções de desenvolvimento, rotas e recursos estão no [README do projeto](Aula-7/NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md).
+O servidor utiliza a porta 3000 por padrão. As instruções de desenvolvimento e as descrições das rotas e dos recursos estão no [README do projeto](Aula-7/NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md).
 
 ## Avaliação
 

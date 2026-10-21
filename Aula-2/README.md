@@ -29,11 +29,11 @@ Os períodos seguem a divisão adotada no material de estudo. As fases mais rece
 - **Interfaces gráficas:** interação por elementos visuais.
 - **Computação móvel:** integração de telefonia, aplicações e sensores em dispositivos portáteis.
 
-O documento detalhado também apresenta MULTICS, UNIX, MINIX, Linux, POSIX, CP/M, MS-DOS e a evolução dos sistemas móveis. Ao final, há glossário e linha do tempo.
+O documento detalhado também apresenta MULTICS, UNIX, MINIX, Linux, POSIX, CP/M, MS-DOS e a evolução dos sistemas móveis. Ao final, há um glossário e uma linha do tempo.
 
 ## Atividades propostas
 
-1. Produzir um resumo em Markdown sobre a história dos sistemas operacionais, conforme a orientação de mais de 500 linhas apresentada na atividade.
+1. Produzir um resumo em Markdown com mais de 500 linhas sobre a história dos sistemas operacionais, conforme a orientação da atividade.
 2. Expandir a linha do tempo no Miro e exportá-la em Markdown para o repositório.
 
 Consulte também a [linha do tempo da Aula 01](../Aula-1/Linha-do-tempo.md).

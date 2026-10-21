@@ -2,7 +2,7 @@
 
 [Aula 03](../Aula-3/README.md) · [Índice da disciplina](../README.md) · [Aula 05](../Aula-5/README.md)
 
-Atividades sobre instalação do Windows e relações entre sistemas operacionais.
+Atividades sobre a instalação do Windows e as relações entre sistemas operacionais.
 
 ## Materiais
 

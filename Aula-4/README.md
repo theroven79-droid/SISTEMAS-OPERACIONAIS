@@ -1,34 +1,50 @@
 # Aula 04 — Instalação e ramificações de Sistemas Operacionais
 
-[Aula anterior](../Aula-3/README.md) · [Índice da disciplina](../README.md) · [Próxima aula](../Aula-5/README.md)
+[Aula 03](../Aula-3/README.md) · [Índice da disciplina](../README.md) · [Aula 05](../Aula-5/README.md)
 
-Esta pasta contém duas atividades em Markdown, com alcances diferentes.
+Atividades sobre instalação do Windows e relações entre sistemas operacionais.
+
+## Materiais
+
+| Arquivo | Tema |
+|---|---|
+| [Atividade-1.md](Atividade-1.md) | Formatação e instalação do Windows, relacionadas aos conceitos de sistemas operacionais. |
+| [Atividade-2.md](Atividade-2.md) | Levantamento de bases e influências de sistemas operacionais. |
 
 ## Atividade 1 — Instalação do Windows
 
-[Consultar a atividade completa](Atividade-1.md)
+A atividade descreve o percurso entre a preparação da mídia de instalação e o primeiro uso do Windows. As etapas incluem inicialização pelo pendrive, reconhecimento do hardware, escolha da unidade, particionamento ou formatação, cópia dos arquivos e configuração dos drivers.
 
-O documento relaciona a preparação de uma instalação do Windows aos conceitos de componentes do SO, kernel, modos de execução, processos, programa/processo/thread, sistema de arquivos, E/S e drivers.
+A explicação relaciona esse processo a sete temas:
 
-O percurso descrito vai da preparação da mídia e seleção do boot à escolha de unidade/partição, cópia de arquivos, instalação de drivers e primeiro uso do sistema. A atividade distingue BIOS/UEFI, que é firmware, dos modos de execução do Windows.
+1. Componentes do sistema operacional.
+2. Kernel.
+3. Modos de execução.
+4. Processos.
+5. Diferenças entre programa, processo e thread.
+6. Sistema de arquivos.
+7. Dispositivos de entrada e saída e seus drivers.
 
-### Entrega registrada
+### Entrega
 
-- Descrição do processo de formatação e instalação.
-- Explicação dos sete conceitos solicitados.
-- Linha do tempo e tabela relacionando etapas aos conceitos.
-- Respostas ao desafio sobre a ausência de SO e a importância de seus componentes.
+O documento solicita a descrição do processo, a explicação dos conceitos, uma linha do tempo, uma tabela que relacione as etapas aos conceitos e as respostas ao desafio final.
 
-A rubrica distribui dez pontos: descrição do processo (2), componentes (2), relação entre conceitos (3), linha do tempo/tabela (1), desafio (1) e organização/Markdown (1). O texto inclui respostas e explicações, não apenas o enunciado.
+### Critérios de avaliação
+
+| Critério | Pontos |
+|---|---:|
+| Descrição do processo | 2 |
+| Componentes do sistema operacional | 2 |
+| Relação entre os conceitos | 3 |
+| Linha do tempo e tabela | 1 |
+| Desafio final | 1 |
+| Organização e Markdown | 1 |
+| **Total** | **10** |
+
+O texto completo também apresenta explicações e respostas aos desafios.
 
 ## Atividade 2 — Ramificações
 
-[Consultar a atividade](Atividade-2.md)
+A [atividade de ramificações](Atividade-2.md) contém uma tabela com cinco sistemas: PS5, Nintendo Switch, Xbox Series S, Android e Steam Deck. O arquivo inicia uma representação em árvore do primeiro item, mas não apresenta as demais árvores.
 
-O arquivo registra uma tabela com cinco sistemas: PS5/Orbis OS, Nintendo Switch/Horizon, Xbox Series S/Xbox OS, Android e Steam Deck/SteamOS 3. Em seguida, inicia a representação em árvore apenas do primeiro item.
-
-A árvore está incompleta e termina sem fechamento do bloco de código. A tabela mistura rótulos de base e de influência; este índice não valida as genealogias nem acrescenta ramificações ausentes.
-
-## Como utilizar
-
-Leia a primeira atividade para acompanhar a relação entre as etapas de instalação e os conceitos do SO. Use a segunda como registro do levantamento de ramificações e de suas pendências. Os documentos originais foram mantidos, e esta pasta não contém scripts para formatar discos ou instalar um sistema.
+Consulte o documento para acompanhar o levantamento disponível.

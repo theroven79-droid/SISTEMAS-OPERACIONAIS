@@ -1,36 +1,37 @@
 # Aula 03 — Tipos de Sistemas Operacionais e Git
 
-[Aula anterior](../Aula-2/README.md) · [Índice da disciplina](../README.md) · [Próxima aula](../Aula-4/README.md)
+[Aula 02](../Aula-2/README.md) · [Índice da disciplina](../README.md) · [Aula 04](../Aula-4/README.md)
 
-Resumo dos contextos de uso de sistemas operacionais e da configuração inicial de identidade no Git, conforme o conteúdo disponível nesta pasta.
+Resumo das categorias de sistemas operacionais e da configuração inicial de identidade no Git.
 
-## Tipos e contextos de uso
+## Tipos de sistemas operacionais
 
-| Categoria | Características registradas | Exemplos citados |
+| Categoria | Características | Exemplos ou aplicações citados |
 |---|---|---|
-| Mainframes | Grande volume de E/S e transações, confiabilidade e processamento em lote | OS/360, OS/390, Linux e UNIX em ambientes corporativos |
-| Servidores | Atendimento simultâneo a usuários e serviços de rede | Linux e Windows Server |
-| Multiprocessadores | Paralelismo, balanceamento, sincronização e coerência de cache | Múltiplas CPUs ou núcleos |
-| Computadores pessoais | Interface gráfica, multimídia e multiprogramação | Windows, macOS e Linux |
-| Portáteis | Economia de energia, sensores e isolamento de aplicações | Android e iOS |
-| Embarcados | Hardware dedicado e recursos restritos | Embedded Linux, QNX e VxWorks |
-| Nós sensores | Bateria limitada, eventos e comunicação sem fio | TinyOS e Contiki |
-| Tempo real | Atendimento a prazos de execução | Hard real-time e soft real-time |
-| Cartões inteligentes | Memória restrita, criptografia e isolamento por applets | Smart cards |
+| Mainframes | Grande volume de entrada e saída, processamento de transações e confiabilidade. | OS/360, OS/390, Linux e UNIX em ambientes corporativos. |
+| Servidores | Atendimento simultâneo a usuários e oferta de serviços de rede. | Linux e Windows Server. |
+| Multiprocessadores | Processamento paralelo, balanceamento de carga, sincronização e coerência de cache. | Sistemas com múltiplas CPUs ou núcleos. |
+| Computadores pessoais | Interface gráfica, multimídia e execução de diferentes programas. | Windows, macOS e Linux. |
+| Dispositivos móveis | Gerenciamento de energia, sensores e isolamento das aplicações. | Android e iOS. |
+| Sistemas embarcados | Execução em hardware dedicado e com recursos restritos. | Embedded Linux, QNX, VxWorks, eletrodomésticos e sistemas automotivos. |
+| Nós sensores | Baixo consumo de energia, funcionamento orientado a eventos e comunicação sem fio. | TinyOS e Contiki. |
+| Sistemas de tempo real | Atendimento a prazos de execução. | Controle de voo e transmissão de mídia. |
+| Cartões inteligentes | Memória restrita, criptografia e isolamento de aplicações. | Smart cards. |
 
-O material diferencia **hard real-time**, com prazos rígidos, de **soft real-time**, que admite degradações ou atrasos ocasionais. As categorias descrevem finalidades e requisitos; não constituem uma lista de projetos implementados nesta pasta.
+### Sistemas de tempo real
+
+- **Hard real-time:** exige o cumprimento de prazos rígidos.
+- **Soft real-time:** admite atrasos ocasionais ou degradações de qualidade.
 
 ## Introdução ao Git
 
-Git é apresentado como ferramenta de controle de versão para rastrear mudanças e sincronizar repositórios. Os comandos registrados para configurar a identidade são:
+O Git é uma ferramenta de controle de versão utilizada para acompanhar alterações nos arquivos e sincronizar repositórios.
+
+Os comandos apresentados na aula configuram a identidade utilizada nos commits:
 
 ```bash
-git config --global user.name "<Nome>"
-git config --global user.email "<Email>"
+git config --global user.name "Seu nome"
+git config --global user.email "seu-email@exemplo.com"
 ```
 
-Substitua os campos pela identidade que deseja registrar. A opção `--global` grava a configuração do usuário do Git.
-
-## Alcance do material
-
-O resumo original termina nessa configuração inicial. Não há nesta pasta um roteiro completo de commits, branches, publicação ou exercícios de Git. A organização acima preserva o conteúdo disponível e fecha o bloco de comandos que estava incompleto.
+Substitua o nome e o e-mail pelos seus dados. A opção `--global` aplica a configuração ao usuário do Git.

@@ -1,39 +1,38 @@
-# Sistemas Operacionais — Aulas e projeto de monitoramento
+# Sistemas Operacionais
 
-Repositório da disciplina de Sistemas Operacionais com resumos em Markdown, atividades e uma aplicação Node.js de observabilidade. O material identifica como docente o Prof. Me. Deivison S. Takatu, com contato `deivison.takatu@fatec.sp.gov.br`.
+Resumos, atividades e projeto prático da disciplina de Sistemas Operacionais.
 
-## Navegação por aula
+**Professor:** Me. Deivison S. Takatu
 
-| Pasta | Conteúdo disponível |
-|---|---|
-| [Aula 01](Aula-1/README.md) | Introdução ao SO, kernel, recursos, avaliação e linha do tempo. |
-| [Aula 02](Aula-2/README.md) | Evolução histórica: válvulas, transistores, lotes, multiprogramação, PCs e dispositivos móveis. |
-| [Aula 03](Aula-3/README.md) | Tipos de sistemas operacionais e introdução à configuração do Git. |
-| [Aula 04](Aula-4/README.md) | Instalação do Windows e estudo de ramificações de sistemas. |
-| [Aula 05](Aula-5/README.md) | Comparativo de Kali Linux, Lubuntu, Zorin OS, Linux Mint e Fedora. |
-| [Aula 06](Aula-6/README.md) | Pasta sem material de aula além do README; conteúdo pendente. |
-| [Aula 07](Aula-7/README.md) | Nuvem, Express, deploy e projeto NEXUS OS. |
+**Contato:** [deivison.takatu@fatec.sp.gov.br](mailto:deivison.takatu@fatec.sp.gov.br)
 
-## Como estudar o acervo
+## Conteúdo do repositório
 
-Comece pelos conceitos da [Aula 01](Aula-1/README.md), avance para o histórico detalhado em [SO-modernos.md](Aula-2/SO-modernos.md) e consulte os guias das aulas seguintes conforme o tema. A [atividade de instalação do Windows](Aula-4/Atividade-1.md) relaciona kernel, processos, threads, drivers, E/S e sistema de arquivos em uma sequência prática.
+| Aula | Tema | Material |
+|---|---|---|
+| 01 | Introdução aos sistemas operacionais | [Resumo e linha do tempo](Aula-1/README.md) |
+| 02 | Evolução histórica dos sistemas operacionais | [Resumo e estudo detalhado](Aula-2/README.md) |
+| 03 | Tipos de sistemas operacionais e introdução ao Git | [Resumo da aula](Aula-3/README.md) |
+| 04 | Instalação do Windows e ramificações de sistemas | [Atividades](Aula-4/README.md) |
+| 05 | Comparação de distribuições Linux | [Comparativo](Aula-5/README.md) |
+| 06 | O conteúdo não está nesta página. | [Pasta da aula](Aula-6/) |
+| 07 | Nuvem e monitoramento do sistema operacional | [Resumo e projeto NEXUS OS](Aula-7/README.md) |
 
-Os arquivos são registros acadêmicos do repositório. As comparações e cronologias não devem ser interpretadas como medições de desempenho ou validações externas. Na [linha do tempo](Aula-1/Linha-do-tempo.md), por exemplo, há dois registros de iOS/Android, em 2007/8 e 2021; a duplicação está indicada no guia da aula.
+## Temas de estudo
 
-## Conceitos que atravessam as aulas
+- **Estrutura do sistema operacional:** kernel, camadas e modos de execução.
+- **Gerenciamento de recursos:** CPU, processos, memória e dispositivos.
+- **Organização dos dados:** sistemas de arquivos e operações de entrada e saída.
+- **Evolução dos sistemas:** processamento em lote, multiprogramação, computadores pessoais e dispositivos móveis.
+- **Ambientes de execução:** distribuições Linux, execução local e serviços em nuvem.
 
-| Conceito | Papel descrito no material |
-|---|---|
-| Sistema operacional | Gerenciar recursos e intermediar aplicações e hardware. |
-| Kernel e privilégios | Núcleo de gerenciamento e distinção entre modo usuário e modo kernel. |
-| CPU e processos | Distribuição de processamento e execução de programas; FIFO, Round Robin e prioridade aparecem na introdução. |
-| Memória | Alocação, proteção, memória virtual, paginação e segmentação. |
-| Arquivos, E/S e drivers | Organização dos dados e comunicação com dispositivos. |
-| Virtualização e nuvem | Relação entre execução local, infraestrutura remota e observação dos recursos disponíveis. |
+A [Aula 01](Aula-1/README.md) apresenta os fundamentos. A [Aula 02](Aula-2/SO-modernos.md) aprofunda o estudo histórico. A [atividade de instalação do Windows](Aula-4/Atividade-1.md) aplica os conceitos de kernel, processos, threads, drivers e sistema de arquivos.
 
-## Executar o projeto da Aula 07
+## Projeto prático: NEXUS OS
 
-A aplicação executável fica em uma subpasta; não há um `package.json` na raiz da disciplina.
+O projeto da Aula 07 é um dashboard desenvolvido com Node.js, Express e Helmet. Ele apresenta informações do sistema operacional e do processo Node.js, como CPU, memória, rede e tempo de atividade.
+
+Com Node.js 18 ou superior e npm disponíveis, execute a partir da raiz deste repositório:
 
 ```bash
 cd Aula-7/NEXUS-OS-OMEGA-V3-REFINADO-PTBR
@@ -41,21 +40,26 @@ npm ci
 npm start
 ```
 
-O [manifesto do projeto](Aula-7/NEXUS-OS-OMEGA-V3-REFINADO-PTBR/package.json) exige Node.js 18 ou superior. O servidor usa a porta 3000 por padrão. Para reinício durante o desenvolvimento, use `npm run dev` nessa mesma pasta.
+O servidor utiliza a porta 3000 por padrão. As instruções de desenvolvimento, rotas e recursos estão no [README do projeto](Aula-7/NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md).
 
-Consulte o [README da aplicação](Aula-7/NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md) para métricas, endpoints, perfis de atualização e a incompatibilidade atual entre os esquemas do link remoto. O [resumo da Aula 07](Aula-7/Resumo_Aula_07_Nuvem_Sistemas_Operacionais.md) registra a proposta de comparar ambientes; a existência da proposta não comprova um deploy em segundo provedor.
+## Avaliação
 
-## Avaliação e entregas registradas
-
-A introdução registra a fórmula:
+A fórmula apresentada na introdução da disciplina é:
 
 ```text
-Nota = (P1 × 0,25) + (P2 × 0,25) + ((PJ + AT) × 0,25)
+Média = (P1 × 0,25) + (P2 × 0,25) + ((PJ + AT) × 0,25)
 ```
 
-P1 e P2 são provas; PJ é projeto e AT corresponde a atividades. A Aula 01 propõe grupos de três a cinco integrantes, resumo em Markdown e linha do tempo no Miro, exportada para o repositório. As entregas específicas aparecem nos guias das aulas.
+| Sigla | Significado |
+|---|---|
+| P1 | Primeira prova |
+| P2 | Segunda prova |
+| PJ | Projeto |
+| AT | Atividades |
 
-## Referências já registradas no acervo
+As propostas de entrega estão nos materiais de cada aula. A Aula 01 orienta a formação de grupos de três a cinco integrantes e a organização das atividades em um repositório GitHub.
+
+## Referências bibliográficas
 
 - TANENBAUM, A. S.; BOS, H. *Sistemas Operacionais Modernos*. 4. ed. São Paulo: Pearson, 2016.
 - SILBERSCHATZ, A.; GALVIN, P. B.; GAGNE, G. *Fundamentos de Sistemas Operacionais*. 9. ed. Rio de Janeiro: LTC, 2015.
@@ -63,7 +67,5 @@ P1 e P2 são provas; PJ é projeto e AT corresponde a atividades. A Aula 01 prop
 - DENARDIN, G. W.; BARRIQUELLO, C. H. *Sistemas Operacionais de Tempo Real e sua Aplicação em Sistemas Embarcados*. Porto Alegre: Editora da UFRGS, 2014.
 - AWASTHI, A.; RAWAT, V. *Ramificação e Tarefas do Sistema Operacional*. Edições Nosso Conhecimento, 2023.
 - DOWNEY, A. B. *Think OS: A Brief Introduction to Operating Systems*. Green Tea Press, 2015.
-- RED HAT. *Red Hat Enterprise Linux – System Administration Guide*. Documentação Oficial.
-- DOCKER INC. *Docker Documentation*. Disponível em: https://docs.docker.com
-
-Essas referências integram o registro da disciplina. Este README foi reorganizado a partir dos arquivos locais, sem consulta externa às obras.
+- RED HAT. *Red Hat Enterprise Linux — System Administration Guide*. Documentação oficial.
+- DOCKER INC. [*Docker Documentation*](https://docs.docker.com/).

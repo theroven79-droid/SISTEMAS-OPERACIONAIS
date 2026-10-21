@@ -1,36 +1,39 @@
 # Aula 02 — Evolução histórica dos Sistemas Operacionais
 
-[Aula anterior](../Aula-1/README.md) · [Índice da disciplina](../README.md) · [Próxima aula](../Aula-3/README.md)
+[Aula 01](../Aula-1/README.md) · [Índice da disciplina](../README.md) · [Aula 03](../Aula-3/README.md)
 
-Guia de leitura do estudo histórico disponível em [SO-modernos.md](SO-modernos.md). Esse documento se apresenta como resumo das seções 1.2.1 a 1.2.5 de *Sistemas Operacionais Modernos*, de Tanenbaum e Bos.
+Estudo da evolução dos sistemas operacionais e de sua relação com as mudanças no hardware e nas formas de utilização dos computadores.
 
-## Organização do estudo
+## Material de estudo
 
-| Período usado no material | Tecnologia / contexto | Mudanças discutidas |
+O arquivo [SO-modernos.md](SO-modernos.md) reúne o estudo detalhado, com base nas seções 1.2.1 a 1.2.5 de *Sistemas Operacionais Modernos*, de Andrew S. Tanenbaum e Herbert Bos.
+
+## Panorama histórico
+
+| Geração | Período apresentado no material | Tecnologia e temas |
 |---|---|---|
-| 1945–1955 | Válvulas e operação direta das máquinas | Programação em código de máquina e preparação manual. |
-| 1955–1965 | Transistores e mainframes | Cartões perfurados, separação de funções e processamento em lote. |
-| 1965–1980 | Circuitos integrados | Multiprogramação, proteção de memória, spooling e compartilhamento de tempo. |
-| 1980 em diante | Computadores pessoais | Microprocessadores, CP/M, MS-DOS, interfaces gráficas e redes. |
-| 1990 em diante | Computação móvel | PDAs, smartphones, Symbian, BlackBerry, iOS e Android. |
-| Perspectivas futuras | Discussão sobre próximas mudanças | Possibilidades, sem uma geração futura consolidada no acervo. |
+| Primeira | 1945–1955 | Válvulas, programação em código de máquina e operação direta dos computadores. |
+| Segunda | 1955–1965 | Transistores, mainframes, cartões perfurados e processamento em lote. |
+| Terceira | 1965–1980 | Circuitos integrados, multiprogramação, spooling e compartilhamento de tempo. |
+| Quarta | A partir de 1980 | Computadores pessoais, interfaces gráficas, redes e sistemas distribuídos. |
+| Quinta | A partir de 1990 | Dispositivos móveis, smartphones e seus sistemas operacionais. |
 
-Os intervalos seguem a organização do texto e se sobrepõem em suas fases mais recentes.
+Os períodos seguem a divisão adotada no material de estudo. As fases mais recentes se sobrepõem.
 
-## Pontos para acompanhar na leitura
+## Conceitos principais
 
-- **Lotes:** o texto descreve um fluxo com IBM 1401 e IBM 7094 e cartões de controle de tarefas.
-- **Multiprogramação:** vários programas em memória permitem usar a CPU enquanto uma tarefa aguarda E/S.
-- **Spooling e timesharing:** preparação de E/S e alternância de atendimento a usuários aparecem como respostas a gargalos.
-- **MULTICS, UNIX, MINIX e Linux:** o documento discute suas relações históricas e o padrão POSIX.
-- **PCs e interfaces:** o estudo aborda CP/M, MS-DOS, Macintosh, Windows e redes.
-- **Dispositivos móveis:** o texto apresenta mudanças de plataformas e interação por toque.
+- **Processamento em lote:** organização de tarefas para execução em sequência.
+- **Multiprogramação:** manutenção de vários programas na memória para aproveitar a CPU enquanto uma tarefa aguarda entrada ou saída.
+- **Spooling:** preparação e armazenamento de dados de entrada e saída em disco.
+- **Compartilhamento de tempo:** alternância do atendimento entre usuários e tarefas.
+- **Interfaces gráficas:** interação por elementos visuais.
+- **Computação móvel:** integração de telefonia, aplicações e sensores em dispositivos portáteis.
 
-O documento inclui glossário, cronologia detalhada e conclusão analítica. As afirmações históricas são registros do material de estudo local; este guia não acrescenta uma verificação externa de datas ou de atribuições.
+O documento detalhado também apresenta MULTICS, UNIX, MINIX, Linux, POSIX, CP/M, MS-DOS e a evolução dos sistemas móveis. Ao final, há glossário e linha do tempo.
 
-## Atividades registradas
+## Atividades propostas
 
-1. Elaborar um resumo em Markdown sobre a história dos sistemas operacionais; o enunciado original pede mais de 500 linhas.
-2. Detalhar a linha do tempo no Miro e exportar o resultado em Markdown para o repositório.
+1. Produzir um resumo em Markdown sobre a história dos sistemas operacionais, conforme a orientação de mais de 500 linhas apresentada na atividade.
+2. Expandir a linha do tempo no Miro e exportá-la em Markdown para o repositório.
 
-A [linha do tempo da Aula 01](../Aula-1/Linha-do-tempo.md) complementa a navegação. A presença dos arquivos não comprova, por si só, o atendimento a cada critério da entrega.
+Consulte também a [linha do tempo da Aula 01](../Aula-1/Linha-do-tempo.md).

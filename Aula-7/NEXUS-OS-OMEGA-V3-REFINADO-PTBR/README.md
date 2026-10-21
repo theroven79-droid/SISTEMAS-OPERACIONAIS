@@ -2,162 +2,141 @@
 
 [Voltar à Aula 07](../README.md) · [Índice da disciplina](../../README.md)
 
-Dashboard em português que reúne métricas do sistema operacional, do processo Node.js e do próprio serviço HTTP. A versão declarada no [package.json](package.json) é **3.1.0**.
+Dashboard de monitoramento em português que apresenta métricas do sistema operacional, do processo Node.js e do serviço HTTP. O projeto está na versão **3.1.0**, conforme o [package.json](package.json).
 
-O monitor observa o ambiente em que o servidor roda. Acessar uma instância em nuvem mostra os recursos visíveis àquela instância, e não os recursos do computador do visitante.
+As métricas são coletadas no ambiente que executa o servidor. Ao acessar uma instância em nuvem, o painel apresenta os recursos visíveis àquela instância.
 
-## Arquitetura e arquivos
+## Estrutura
 
-```text
-Navegador ← HTML / JSON / SSE ← Express ← os / process / perf_hooks / v8 / fs
-```
-
-| Arquivo | Responsabilidade |
+| Arquivo | Função |
 |---|---|
-| [server.js](server.js) | Coleta de métricas, rotas Express, HTML, CSS e JavaScript do navegador. |
-| [package.json](package.json) | Scripts, requisito de Node.js e dependências. |
-| [package-lock.json](package-lock.json) | Versões resolvidas para instalação reproduzível. |
-| [.gitignore](.gitignore) | Exclusões de dependências, arquivos de ambiente e logs. |
+| [server.js](server.js) | Servidor Express, coleta de métricas, APIs, HTML, CSS e JavaScript da interface. |
+| [package.json](package.json) | Dependências, scripts e requisito de Node.js. |
+| [package-lock.json](package-lock.json) | Versões das dependências resolvidas pelo npm. |
+| [.gitignore](.gitignore) | Regras de exclusão de dependências, arquivos de ambiente e logs. |
 
-Não há compilação separada de frontend: a página é montada no próprio `server.js`.
+Toda a aplicação está concentrada em `server.js`.
 
-## Instalar e executar
+## Instalação e execução
 
-Requisitos declarados: **Node.js 18 ou superior** e npm. Execute no diretório desta aplicação:
+Requisitos: **Node.js 18 ou superior** e npm.
+
+Execute na pasta que contém este README:
 
 ```bash
 npm ci
 npm start
 ```
 
-O processo escuta em `0.0.0.0`, na porta 3000 por padrão. Para desenvolvimento com reinício ao alterar o arquivo:
+O servidor escuta em `0.0.0.0` e utiliza a porta 3000 por padrão.
+
+### Desenvolvimento
 
 ```bash
 npm run dev
 ```
 
-Para escolher outra porta em Bash:
+O script de desenvolvimento executa `node --watch server.js`.
+
+### Outra porta
+
+Em um terminal Bash:
 
 ```bash
 PORT=3001 npm start
 ```
 
-`PORT` é a configuração de porta lida pelo servidor. O código também consulta variáveis de provedores e `NODE_ENV` para descrever o ambiente; não exige credenciais nem banco de dados para monitoramento local e não carrega `.env` automaticamente.
+As dependências declaradas são Express `^5.1.0` e Helmet `^8.1.0`.
 
-As dependências declaradas são Express `^5.1.0` e Helmet `^8.1.0`. O lockfile resolve Express **5.2.1** e Helmet **8.3.0**.
+## Métricas e informações
 
-## Métricas disponíveis
-
-| Grupo | Dados coletados |
+| Grupo | Informações disponíveis |
 |---|---|
-| CPU | Uso médio e por núcleo a partir da diferença entre amostras, média e pico recentes, modelo, clock e carga média. |
-| Memória | RAM total/livre/usada e memória do processo: RSS, heap, memória externa e Array Buffers. |
-| Runtime | Node.js, V8, libuv, OpenSSL, uso do event loop, atraso do loop, eventos de GC e estatísticas de heap. |
-| Sistema | Hostname, plataforma, versão do kernel, arquitetura, PID/PPID e tempos de atividade. |
-| Rede | Interfaces, endereços e escolha de uma interface IPv4 principal. |
-| HTTP | Requisições concluídas, média de duração, classes de status e taxa de erros do próprio Express. |
-| Projeto e armazenamento | Contagem/tamanho de arquivos na pasta da aplicação e espaço do volume, quando suportado. |
-| Sessão | Médias, picos, percentis e detecção de desvio em relação à linha de base recente. |
-| Processos | Lista resumida de processos com PID, CPU e memória, conforme as informações permitidas pelo sistema. |
+| CPU | Uso médio e por núcleo, média e pico recentes, modelo, clock e carga média. |
+| Memória | RAM total, livre e utilizada; RSS, heap e memória externa do processo. |
+| Runtime | Versões do Node.js e V8, uso e atraso do event loop, eventos de coleta de lixo e estatísticas do heap. |
+| Sistema operacional | Hostname, plataforma, kernel, arquitetura e tempo de atividade. |
+| Rede | Interfaces e endereços de rede, com identificação de um IPv4 principal. |
+| HTTP | Quantidade de requisições, duração média, classes de status e taxa de erros do próprio serviço. |
+| Projeto | Quantidade de arquivos e diretórios, tamanho e distribuição por extensão. |
+| Armazenamento | Espaço do volume em que o projeto está localizado, quando a coleta é suportada. |
+| Processos | Nome, PID, CPU e memória dos processos visíveis ao sistema. |
+| Sessão | Médias, picos, percentis e desvios em relação às amostras recentes. |
 
-A análise de arquivos ignora `node_modules` e `.git`. O painel de rede não é um medidor de largura de banda: o “tráfego HTTP” mostrado corresponde às requisições do próprio serviço.
+A análise de arquivos ignora `node_modules` e `.git`. O indicador HTTP acompanha as requisições do Express; ele não mede a largura de banda de todas as interfaces.
 
 ## Rotas HTTP
 
-| Método e rota | Conteúdo |
+| Método | Caminho | Resposta |
+|---|---|---|
+| GET | `/` | Dashboard HTML. |
+| GET | `/api/dashboard` | JSON com a telemetria completa em `data`. |
+| GET | `/api/public-snapshot` | Resumo de telemetria com o esquema `nexus-os-live-v3`. |
+| OPTIONS | `/api/public-snapshot` | Resposta 204 para a consulta entre origens. |
+| GET | `/api/stream` | Stream SSE com eventos `telemetry` e eventos `fault` em caso de falha de coleta. |
+| GET | `/api/health` | JSON de disponibilidade com `success: true` e `status: "online"`. |
+
+## Atualização da telemetria
+
+| Componente | Intervalo ou limite |
 |---|---|
-| `GET /` | Dashboard HTML completo. |
-| `GET /api/dashboard` | JSON com `success`, `timestamp` e `data` contendo a telemetria. |
-| `GET /api/public-snapshot` | Resumo selecionado com `schema: "nexus-os-live-v3"` e CORS aberto para consulta remota. |
-| `OPTIONS /api/public-snapshot` | Resposta 204 para preflight. |
-| `GET /api/stream` | SSE com eventos `telemetry`; em falha de coleta, evento `fault`. |
-| `GET /api/health` | JSON com `success: true`, `timestamp` e `status: "online"`. |
+| CPU | Amostragem a cada 1 segundo e histórico de até 60 valores. |
+| SSE | Atualização a cada 1,5 segundo. |
+| Perfis da interface | 1 s, 1,5 s, 3 s ou 5 s. |
+| Lista de processos | Atualização a cada 5 segundos, com até 14 itens. |
+| Análise de arquivos | Cache de 30 segundos. |
+| Sessão no servidor | Até 180 amostras. |
+| Gravação no navegador | Até 600 registros, exportáveis em CSV. |
 
-Rotas de API inexistentes recebem 404 em JSON. A rota de saúde confirma disponibilidade HTTP; não executa uma verificação completa de todas as fontes de métricas.
+O perfil de 1,5 segundo utiliza SSE quando disponível. Os demais perfis utilizam consultas periódicas, que também servem como alternativa em caso de falha do stream. Os históricos ficam em memória.
 
-## Atualização e limites
-
-| Componente | Configuração no código |
-|---|---|
-| CPU | Amostragem a cada 1 segundo; histórico de até 60 valores. |
-| SSE | Telemetria a cada 1,5 segundo e heartbeat a cada 15 segundos. |
-| Perfis da interface | 1 s, 1,5 s, 3 s ou 5 s. SSE é usado no perfil de 1,5 s; os demais usam consultas periódicas. |
-| Falha de SSE | A interface passa para consultas periódicas. |
-| Processos | Atualização a cada 5 segundos, com até 14 itens. |
-| Análise da pasta | Cache de 30 segundos. |
-| Histórico HTTP | Até 300 eventos recentes, filtrados pela janela de 60 segundos. |
-| Estatísticas da sessão no servidor | Até 180 amostras de coleta. |
-| Gravação no navegador | Até 600 registros em memória, exportáveis em CSV. |
-
-As estatísticas de sessão no servidor são alimentadas quando a telemetria é coletada; não representam necessariamente um intervalo fixo independente do número de clientes. Reiniciar o processo descarta os históricos em memória.
-
-## Interface e relatórios
+## Interface
 
 - Cinco temas: Cyber Cyan, Quantum Violet, Matrix Emerald, Crimson Reactor e Solar Gold.
-- Neon suave, intenso ou desligado; modo observação para reforçar contraste.
-- Controles de pausa, apresentação, tela cheia e efeitos visuais.
-- Paleta `Ctrl+K` (também `Cmd+K`), com setas para navegar, Enter para executar e Esc para fechar.
-- Filtro e ordenação de processos por nome/PID, CPU ou memória.
-- Exportação/cópia de relatório JSON no formato `nexus-os-report-v1`.
-- Importação de dois relatórios desse formato para comparação observacional.
-- Gravação de sessão no navegador e exportação em CSV.
+- Neon suave, intenso ou desligado.
+- Modo de observação com reforço de contraste.
+- Pausa da telemetria, apresentação, tela cheia e controle dos efeitos visuais.
+- Filtro de processos por nome ou PID e ordenação por CPU, memória, nome ou PID.
+- Paleta de comandos com `Ctrl+K` ou `Cmd+K`, navegação pelas setas, execução por Enter e fechamento por Esc.
 
-Preferências como tema, neon, perfil e ordenação são guardadas em `localStorage`. Gravar uma sessão não cria um arquivo no servidor; o download ocorre ao exportar.
+As preferências de tema, neon, perfil e ordenação são salvas no `localStorage` do navegador.
 
-Chart.js vem de `cdn.jsdelivr.net`, Lucide de `unpkg.com` e fontes de `fonts.googleapis.com`/`fonts.gstatic.com`. Sem Chart.js, o código evita criar gráficos e mantém as atualizações textuais. Esses recursos visuais dependem das respectivas redes externas.
+## Relatórios e comparação
 
-## Saúde e interpretação
+A interface permite exportar ou copiar um relatório JSON no formato `nexus-os-report-v1`. Dois relatórios desse formato podem ser importados para comparação. As sessões gravadas no navegador são exportadas em CSV.
 
-A pontuação de saúde é uma heurística implementada em `buildHealth`: CPU e RAM têm peso de 25% cada, runtime 15%, event loop 20% e API 15%. As classificações são ÓTIMO (90–100), SAUDÁVEL (75–89), ATENÇÃO (50–74) e CRÍTICO (abaixo de 50).
+O NEXUS LINK consulta `/api/public-snapshot` de outra instância. Na versão atual, existe uma diferença entre os esquemas do servidor e do cliente remoto: o servidor retorna `nexus-os-live-v3`, enquanto `fetchRemote` aceita `nexus-os-live-v2`. Por isso, o cliente rejeita o resumo de outra instância com este mesmo código.
 
-O componente de rede é exibido separadamente e não entra nessa soma. A pontuação e a comparação de amostras não substituem um benchmark controlado. Recursos do host podem diferir do que o processo enxerga em um contêiner.
+## Saúde e processos
 
-## Comparação remota — Limitação atual
+A pontuação de saúde combina CPU, memória, runtime, event loop e API. É um indicador heurístico do próprio dashboard, com as classificações ÓTIMO, SAUDÁVEL, ATENÇÃO e CRÍTICO.
 
-A interface NEXUS LINK recebe uma URL HTTP/HTTPS e tenta consultar `/api/public-snapshot` pelo navegador. Porém, há uma incompatibilidade no próprio [server.js](server.js):
+O observador de processos funciona em modo somente leitura. Ele utiliza PowerShell no Windows e `ps` no Linux. Se a enumeração não estiver disponível, apresenta apenas o processo Node.js. O campo de CPU no Windows corresponde ao tempo acumulado; no Linux, é o percentual retornado por `ps`.
 
-- `publicSnapshot` produz `nexus-os-live-v3`.
-- `fetchRemote` aceita somente `nexus-os-live-v2`.
+As rotas de leitura não possuem autenticação. A telemetria inclui informações do ambiente, como hostname, interfaces e processos; o resumo público contém um conjunto menor de campos.
 
-Por isso, a versão atual rejeita o snapshot de outra instância desta mesma versão com “Endpoint remoto compatível do NEXUS não encontrado”. Executar duas cópias não resolve essa divergência. A comparação por importação de relatórios JSON utiliza outro esquema, `nexus-os-report-v1`.
+## Recursos visuais
 
-## Processos e exposição de dados
+Chart.js é carregado de `cdn.jsdelivr.net`, Lucide de `unpkg.com` e as fontes de `fonts.googleapis.com` e `fonts.gstatic.com`. Os gráficos dependem do carregamento do Chart.js; quando ele não está disponível, o código mantém a atualização dos indicadores textuais.
 
-O observador usa um comando fixo de PowerShell no Windows ou `ps` no Linux. Se a enumeração falha, o painel apresenta somente o processo Node em modo limitado. No Windows, o campo de CPU é tempo acumulado; na coleta Linux, é o percentual fornecido por `ps`.
+## Publicação no Render
 
-Não há rota de encerramento de processos ou execução de comandos do visitante. Também não há autenticação implementada nas rotas de leitura. A API completa expõe informações como hostname, interfaces e processos; o resumo público mantém hostname e características de CPU/memória. Os relatórios selecionam campos e não exportam o conteúdo completo de `process.env`.
+Para um Web Service configurado com esta pasta como diretório da aplicação:
 
-## Executar no Render e apresentar
+| Campo | Comando |
+|---|---|
+| Build Command | `npm ci` |
+| Start Command | `npm start` |
 
-O material da Aula 07 e o README anterior deste projeto descrevem um Web Service no Render. Os comandos correspondentes aos arquivos atuais são:
+O servidor utiliza a variável `PORT` fornecida pelo ambiente. Para a apresentação no OBS descrita no material do projeto, execute a aplicação e configure sua página como fonte de navegador.
 
-```text
-Build Command: npm ci
-Start Command: npm start
-```
+## Conferir o servidor
 
-A plataforma pode fornecer `PORT`. A detecção de Render no código usa suas variáveis de ambiente; detectar outros provedores não comprova que um deploy foi realizado neles.
-
-Para a apresentação descrita no material do projeto, inicie o servidor e use a página como fonte de navegador no OBS. Essa opção depende de um ambiente gráfico e não altera a coleta das métricas.
-
-## Verificação e diagnóstico
-
-Com o serviço iniciado, consulte localmente:
+Com o processo iniciado, execute em outro terminal:
 
 ```bash
 curl --fail --silent http://127.0.0.1:3000/api/health
 curl --fail --silent http://127.0.0.1:3000/api/dashboard
-curl --fail --silent http://127.0.0.1:3000/api/public-snapshot
 ```
 
-Para conferir o stream, execute `curl -N http://127.0.0.1:3000/api/stream` e interrompa com `Ctrl+C` após receber um evento `telemetry`.
-
-| Sintoma | O que conferir |
-|---|---|
-| Módulo Express/Helmet não encontrado | Execute `npm ci` na pasta que contém este `package.json`. |
-| Porta ocupada | Defina outro `PORT` antes de iniciar. |
-| Processos em modo limitado | Confira se o comando fixo de coleta está disponível e se o sistema permite a enumeração. |
-| Métricas textuais presentes, gráficos ausentes | Confira o carregamento do Chart.js por CDN. |
-| Link remoto rejeitado | Confira a incompatibilidade de esquemas descrita acima. |
-
-O manifesto não define testes automatizados. Esta documentação se baseia no `server.js`, nos manifests e no material já presente neste projeto.
+Para observar o stream, use `curl -N http://127.0.0.1:3000/api/stream` e interrompa com `Ctrl+C` após receber um evento `telemetry`. Se utilizar outra porta, ajuste os comandos.

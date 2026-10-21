@@ -37,3 +37,31 @@ O documento detalhado também apresenta MULTICS, UNIX, MINIX, Linux, POSIX, CP/M
 2. Expandir a linha do tempo no Miro e exportá-la em Markdown para o repositório.
 
 Consulte também a [linha do tempo da Aula 01](../Aula-1/Linha-do-tempo.md).
+
+---
+
+## Linha do tempo para revisão
+
+```mermaid
+flowchart LR
+    A["Válvulas"] --> B["Transistores e lotes"]
+    B --> C["Circuitos integrados e multiprogramação"]
+    C --> D["PCs, interfaces e redes"]
+    D --> E["Sistemas móveis"]
+```
+
+| Tema-chave | Onde aprofundar | Ideia central |
+|---|---|---|
+| Processamento em lote | [SO-modernos.md](SO-modernos.md) | Execução de tarefas organizadas em sequência |
+| Multiprogramação | [SO-modernos.md](SO-modernos.md) | Melhor uso da CPU durante esperas de E/S |
+| Compartilhamento de tempo | [SO-modernos.md](SO-modernos.md) | Alternância de atendimento entre tarefas ou usuários |
+| Sistemas pessoais e móveis | [SO-modernos.md](SO-modernos.md) | Evolução de hardware, interface e necessidades de uso |
+
+## Perguntas para autoavaliação
+
+1. Qual foi o papel dos transistores na evolução do hardware?
+2. Por que a multiprogramação aumentou o aproveitamento do processador?
+3. Como o compartilhamento de tempo mudou a interação com computadores?
+4. Que diferenças de requisitos surgiram com os sistemas móveis?
+
+**Nota cronológica:** a periodização segue o material da disciplina e usa faixas aproximadas. Os eventos tecnológicos reais não ocorreram em etapas totalmente isoladas. [Voltar ao índice](../README.md).

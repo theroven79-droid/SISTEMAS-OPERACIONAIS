@@ -17,7 +17,7 @@ Resumos, atividades e projeto prático da disciplina de Sistemas Operacionais.
 | 03 | Tipos de sistemas operacionais e introdução ao Git | [Resumo da aula](Aula-3/README.md) |
 | 04 | Instalação do Windows e ramificações de sistemas | [Atividades](Aula-4/README.md) |
 | 05 | Comparação de distribuições Linux | [Comparativo](Aula-5/README.md) |
-| 06 | O conteúdo não está nesta página. | [Pasta da aula](Aula-6/) |
+| 06 | Material ainda não publicado; página de status e navegação. | [Aula 06](Aula-6/README.md) |
 | 07 | Nuvem e monitoramento do sistema operacional | [Resumo e projeto NEXUS OS](Aula-7/README.md) |
 
 ## Temas de estudo

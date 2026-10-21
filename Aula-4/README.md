@@ -13,7 +13,7 @@ Esta aula reúne duas atividades: uma relaciona a **instalação do Windows aos 
 
 ## ⚙️ Atividade 1 — Instalação do Windows
 
-A atividade descreve as etapas desde a preparação da mídia até a configuração inicial do sistema. O objetivo é relacionar ações práticas de instalação aos seguintes conceitos: componentes do sistema operacional, kernel, modos de execução, processos, diferença entre programa e thread, sistemas de arquivos, entrada e saída e drivers.
+A atividade descreve as etapas desde a preparação da mídia até a configuração inicial do sistema. O objetivo é relacionar ações práticas de instalação aos seguintes conceitos: componentes do sistema operacional, kernel, modos de execução, processos, diferença entre programa, processo e thread, sistemas de arquivos, entrada e saída e drivers.
 
 ```mermaid
 flowchart LR

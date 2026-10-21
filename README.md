@@ -1,5 +1,7 @@
 # Sistemas Operacionais
 
+![Material](https://img.shields.io/badge/Conte%C3%BAdo-7%20pastas%20de%20aulas-2F81F7) ![Projeto](https://img.shields.io/badge/Projeto-Node.js-339933?logo=nodedotjs&logoColor=white)
+
 Resumos, atividades e projeto prático da disciplina de Sistemas Operacionais.
 
 **Professor:** Me. Deivison S. Takatu
@@ -69,3 +71,55 @@ As propostas de entrega estão nos materiais de cada aula. A Aula 01 orienta a f
 - DOWNEY, A. B. *Think OS: A Brief Introduction to Operating Systems*. Green Tea Press, 2015.
 - RED HAT. *Red Hat Enterprise Linux — System Administration Guide*. Documentação oficial.
 - DOCKER INC. [*Docker Documentation*](https://docs.docker.com/).
+
+---
+
+## Percurso visual da disciplina
+
+```mermaid
+flowchart TD
+    A["Fundamentos de Sistemas Operacionais"] --> B["História e evolução"]
+    B --> C["Tipos de SO e Git"]
+    C --> D["Instalação e ramificações"]
+    D --> E["Distribuições Linux"]
+    E --> F["Aula 06 · Sem material"]
+    F --> G["Nuvem, Node.js e monitoramento"]
+    G --> H["Projeto prático NEXUS OS"]
+```
+
+## Quadro de navegação
+
+| Etapa | Aprendizado | Entrega ou material |
+|---|---|---|
+| 01 | Kernel, processos, memória, E/S | [Resumo e linha do tempo](Aula-1/README.md) |
+| 02 | Gerações e história dos SO | [Estudo detalhado](Aula-2/SO-modernos.md) |
+| 03 | Tipos de SO e identidade Git | [Aula 03](Aula-3/README.md) |
+| 04 | Instalação e famílias de SO | [Atividade 1](Aula-4/Atividade-1.md) · [Atividade 2](Aula-4/Atividade-2.md) |
+| 05 | Comparar distribuições Linux | [Aula 05](Aula-5/README.md) |
+| 06 | Conteúdo não disponibilizado | [Situação da pasta](Aula-6/README.md) |
+| 07 | Computação em nuvem e telemetria | [Resumo](Aula-7/Resumo_Aula_07_Nuvem_Sistemas_Operacionais.md) · [Projeto](Aula-7/NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md) |
+
+## Tecnologia aplicada no projeto final
+
+```mermaid
+flowchart LR
+    A["Host/Container"] --> B["Node.js + módulo os"]
+    B --> C["Servidor Express"]
+    C --> D["Rotas JSON e SSE"]
+    D --> E["Dashboard NEXUS OS"]
+    E --> F["Análise do ambiente de execução"]
+```
+
+| Ferramenta | Papel |
+|---|---|
+| [Node.js](https://nodejs.org/) | Runtime JavaScript do servidor |
+| [Express](https://expressjs.com/) | Rotas e respostas HTTP |
+| [Render](https://render.com/docs) | Plataforma de publicação tratada na aula |
+| [Git](https://git-scm.com/docs) | Controle de versões das atividades |
+| [GitHub Markdown](https://docs.github.com/pt/get-started/writing-on-github) | Registro e apresentação do material |
+
+## Como navegar por este repositório
+
+Os READMEs das aulas funcionam como **índices resumidos**, enquanto os arquivos `.md` mais extensos concentram os estudos e as atividades. Para reproduzir o painel da Aula 07, consulte os passos de instalação no [README do NEXUS OS](Aula-7/NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md).
+
+**Observação:** os arquivos representam material acadêmico e experimentos. Dados de telemetria e comparações entre plataformas precisam ser coletados no ambiente real de execução; o repositório não oferece medições universais ou atuais dos servidores.

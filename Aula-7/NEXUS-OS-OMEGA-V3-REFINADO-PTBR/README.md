@@ -4,6 +4,37 @@
 
 [Voltar à Aula 07](../README.md) · [Índice da disciplina](../../README.md)
 
+## 🎮 Missão final · Centro de observabilidade NEXUS OS
+
+> **Objetivo:** Valide a arquitetura técnica da aplicação, aprenda a consumir rotas e distinga indicadores de riscos de exposição. XP indica **progresso didático opcional** e não é calculado automaticamente nem faz parte da avaliação oficial.
+
+| Checkpoint | Missão | Evidência consultável | XP |
+|---|---|---|--:|
+| Iniciar | Executar `npm ci` e `npm start` | [`package.json`](package.json) | 15 |
+| Integridade | Consultar o endpoint de disponibilidade | [`/api/health`](#rotas-http) | 15 |
+| Telemetria | Observar o JSON completo e o SSE | [`server.js`](server.js) | 25 |
+| Diagnosticar | Explicar limite da integração remota | [Comparação](#relatórios-e-comparação) | 25 |
+| Auditar | Identificar informações sensíveis nas rotas | [Segurança](#saúde-e-processos) | 20 |
+
+**Progresso manual**
+
+- [ ] Abri `http://localhost:3000` com o serviço local.
+- [ ] Entendo diferença entre `/api/dashboard`, `/api/stream` e `/api/public-snapshot`.
+- [ ] Consigo explicar a ausência de autenticação e persistência.
+- [ ] Sei que o cliente remoto valida v2, enquanto o resumo publica v3.
+
+<details>
+<summary><strong>🏅 Desafio opcional de excelência</strong></summary>
+
+Desafio técnico para uma branch futura: definir e validar um contrato único para o NEXUS LINK; documentar o esquema e adicionar testes. **Ainda não implementado.**
+
+</details>
+
+**Nota técnica:** O NEXUS OS não concede pontos, conquistas ou certificados; tudo aqui representa um roteiro de verificação manual.
+
+---
+
+
 Dashboard de monitoramento em português que apresenta métricas do sistema operacional, do processo Node.js e do serviço HTTP. O projeto está na versão **3.1.0**, conforme o [package.json](package.json).
 
 As métricas são coletadas no ambiente que executa o servidor. Ao acessar uma instância em nuvem, o painel apresenta os recursos visíveis àquela instância.

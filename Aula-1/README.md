@@ -1,63 +1,50 @@
-# 📚 Resumo: Aula 01 - Apresentação da Disciplina e Introdução aos Sistemas Operacionais
+# Aula 01 — Introdução aos Sistemas Operacionais
 
----
+[Índice da disciplina](../README.md) · [Próxima aula](../Aula-2/README.md)
 
-## 👨‍🏫 1. Apresentação do Docente & Contextualização
+A aula apresenta a disciplina, as funções de um sistema operacional e as primeiras atividades de organização do portfólio.
 
-* **Docente:** Prof. Me. Deivison S. Takatu (`deivison.takatu@fatec.sp.gov.br`)[cite: 3].
-* **Formação e Perfil:**
-  * 🎓 Mestre em Ciência da Computação (2021) e especialização em IA[cite: 3].
-  * 💼 Gerente de Projetos e Professor Universitário[cite: 3].
-  * 🌐 Atuação na FATEC em projetos com Programação Web, Gamificação e Educação Financeira[cite: 3].
+## Material da pasta
 
----
+| Arquivo | Conteúdo |
+|---|---|
+| [Linha-do-tempo.md](Linha-do-tempo.md) | Cronologia resumida com registros de GM-NAA I/O, Unix, MS-DOS, Mac OS, Windows, Linux e sistemas móveis. |
+| [Linha-do-tempo-imagem.png](Linha-do-tempo-imagem.png) | Imagem de apoio à linha do tempo. |
 
-## 🧠 2. Fundamentos de Sistemas Operacionais
+## Fundamentos
 
-* **Definição:** Software basilar encarregado de gerenciar recursos de hardware e intermediar a execução de outros programas[cite: 3].
-* **Importância:** Funciona como interface primária entre usuário/aplicações e a máquina[cite: 3].
-* **Exemplos:** Windows, macOS, Linux, Android, iOS[cite: 3].
+O sistema operacional gerencia hardware e recursos e fornece uma interface para a execução das aplicações. Windows, macOS, Linux, Android e iOS são os exemplos citados no material.
 
-### 🏗️ Arquitetura & Estrutura Interna
-* **Estrutura em Camadas:** Abordagem modular e hierárquica[cite: 3].
-* **Kernel (Núcleo):** Núcleo com acesso direto ao hardware (designs monolítico vs. modular)[cite: 3].
-* **Modos de Operação do Processador:**
-  * 🔒 **Modo Usuário (*User Mode*):** Programas comuns sem privilégios elevados[cite: 3].
-  * 🔑 **Modo Kernel (*Kernel Mode*):** Acesso privilegiado e total ao hardware[cite: 3].
+| Tema | Síntese da aula |
+|---|---|
+| Organização interna | Estruturas em camadas e organização monolítica/modular. |
+| Kernel | Núcleo com acesso privilegiado ao hardware e responsabilidade pelo gerenciamento dos recursos. |
+| Modo usuário | Execução das aplicações com privilégios limitados. |
+| Modo kernel | Operações privilegiadas do sistema. |
+| Escalonamento | Distribuição da CPU buscando eficiência, justiça e tempo de resposta; exemplos FIFO, Round Robin e prioridade. |
+| Memória | Alocação e proteção da RAM; memória virtual com paginação e segmentação. |
+| E/S e arquivos | Controle de dispositivos e organização dos dados armazenados. |
+| Segurança e virtualização | Proteção de acesso e uso da infraestrutura. |
 
----
+## Avaliação registrada
 
-## ⚙️ 3. Principais Componentes e Funções do SO
+```text
+Média = (P1 × 0,25) + (P2 × 0,25) + ((PJ + AT) × 0,25)
+```
 
-* ⏱️ **Escalonamento de Processos:**
-  * Define como a CPU é distribuída para garantir eficiência, justiça e baixo tempo de resposta[cite: 3].
-  * *Algoritmos citados:* FIFO, Round Robin, Prioridade[cite: 3].
-* 💾 **Gerenciamento de Memória:**
-  * **Memória Principal (RAM):** Alocação dinâmica e proteção de memória[cite: 3].
-  * **Memória Virtual:** Expansão lógica da RAM via paginação e segmentação[cite: 3].
-* 📁 **Dispositivos, Arquivos e Segurança:**
-  * **E/S (Entrada/Saída):** Controle do hardware periférico[cite: 3].
-  * **Sistemas de Arquivos:** Organização e acesso a dados estruturados[cite: 3].
-  * **Segurança & Virtualização:** Proteção de acessos e otimização de infraestrutura[cite: 3].
+P1/P2: provas; PJ: projeto; AT: atividades.
 
----
+## Atividades propostas
 
-## 📊 4. Critérios de Avaliação
+1. Formar um grupo de três a cinco integrantes, mantido nas entregas semanais.
+2. Enviar os nomes completos dos integrantes.
+3. Criar o repositório da disciplina e registrar o resumo da aula em Markdown.
+4. Produzir no Miro uma linha do tempo dos sistemas operacionais e guardar a versão exportada em Markdown.
 
-* **Fórmula da Média:**
-  $$\text{Média} = (P_1 \times 0.25) + (P_2 \times 0.25) + ((PJ + AT) \times 0.25)$$[cite: 3]
-  * 📝 **$P_1$:** Prova 1[cite: 3]
-  * 📝 **$P_2$:** Prova 2[cite: 3]
-  * 💻 **$PJ$:** Projeto[cite: 3]
-  * 📋 **$AT$:** Atividades[cite: 3]
+O material relaciona essas entregas à construção de um portfólio de estudo e de projetos.
 
-> 💡 **Portfólio Prático:** Construir repositórios de projetos como comprovação prática de habilidades para avaliação acadêmica e oportunidades profissionais[cite: 3].
+## Leitura da linha do tempo
 
----
+A cronologia disponível registra iOS/Android em 2007/8 e repete esses sistemas em 2021 com referência à imagem original. A repetição é uma pendência do arquivo de estudo; não foi convertida em um novo marco histórico neste resumo.
 
-## 🎯 5. Atividades Propostas (Aula 01)
-
-1. 👥 **Formação de Grupos:** Grupos de 3 a 5 integrantes fixos para todas as entregas do semestre[cite: 3].
-2. 📄 **Envio da Composição:** Submeter arquivo com nomes completos dos integrantes na plataforma[cite: 3].
-3. 🐙 **Repositório GitHub:** Criar o repositório principal da disciplina com o resumo da Aula 01 em Markdown (`.md`)[cite: 3].
-4. 🗺️ **Linha do Tempo (Miro ➔ .md):** Construir colaborativamente uma linha do tempo dos lançamentos de SOs no Miro e salvar a versão em `.md` no GitHub[cite: 3].
+**Docente registrado:** Prof. Me. Deivison S. Takatu — `deivison.takatu@fatec.sp.gov.br`. A apresentação original também menciona mestrado em Ciência da Computação, especialização em IA e atuação com projetos e docência.

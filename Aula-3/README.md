@@ -1,53 +1,36 @@
-# 🖥️ Resumo: Conceitos, Funções e Tipos de Sistemas Operacionais & Git
+# Aula 03 — Tipos de Sistemas Operacionais e Git
 
----
+[Aula anterior](../Aula-2/README.md) · [Índice da disciplina](../README.md) · [Próxima aula](../Aula-4/README.md)
 
-## 📌 1. Tipos de Sistemas Operacionais
+Resumo dos contextos de uso de sistemas operacionais e da configuração inicial de identidade no Git, conforme o conteúdo disponível nesta pasta.
 
-* 🏢 **Mainframes (Grande Porte):**
-  * Alta capacidade de Entrada/Saída (E/S) e processamento massivo de transações (TPS).
-  * Foco em confiabilidade e processamento em lote (*batch*).
-  * *Exemplos:* OS/360, OS/390, Linux e UNIX em servidores bancários e corporativos.
+## Tipos e contextos de uso
 
-* 🌐 **Sistemas de Servidor:**
-  * Múltiplos usuários simultâneos e serviços de rede (web, arquivos, bancos de dados, autenticação).
-  * Alta estabilidade e escalabilidade.
-  * *Exemplos:* Linux, Windows Server.
+| Categoria | Características registradas | Exemplos citados |
+|---|---|---|
+| Mainframes | Grande volume de E/S e transações, confiabilidade e processamento em lote | OS/360, OS/390, Linux e UNIX em ambientes corporativos |
+| Servidores | Atendimento simultâneo a usuários e serviços de rede | Linux e Windows Server |
+| Multiprocessadores | Paralelismo, balanceamento, sincronização e coerência de cache | Múltiplas CPUs ou núcleos |
+| Computadores pessoais | Interface gráfica, multimídia e multiprogramação | Windows, macOS e Linux |
+| Portáteis | Economia de energia, sensores e isolamento de aplicações | Android e iOS |
+| Embarcados | Hardware dedicado e recursos restritos | Embedded Linux, QNX e VxWorks |
+| Nós sensores | Bateria limitada, eventos e comunicação sem fio | TinyOS e Contiki |
+| Tempo real | Atendimento a prazos de execução | Hard real-time e soft real-time |
+| Cartões inteligentes | Memória restrita, criptografia e isolamento por applets | Smart cards |
 
-* ⚡ **Sistemas de Multiprocessadores:**
-  * Suporte a múltiplos núcleos/CPUs e paralelismo.
-  * Desafios: balanceamento de carga, sincronização (*locks*, semáforos) e coerência de cache.
+O material diferencia **hard real-time**, com prazos rígidos, de **soft real-time**, que admite degradações ou atrasos ocasionais. As categorias descrevem finalidades e requisitos; não constituem uma lista de projetos implementados nesta pasta.
 
-* 💻 **Computadores Pessoais (PCs):**
-  * Interface gráfica intuitiva, foco no usuário final, suporte multimídia e multiprogramação.
-  * *Exemplos:* Windows, macOS, Linux.
+## Introdução ao Git
 
-* 📱 **Sistemas Portáteis (Mobile):**
-  * Gestão de energia rigorosa, APIs para sensores e isolamento de segurança (*sandboxing*)[cite: 1].
-  * *Exemplos:* Android, iOS[cite: 1].
+Git é apresentado como ferramenta de controle de versão para rastrear mudanças e sincronizar repositórios. Os comandos registrados para configurar a identidade são:
 
-* 🔌 **Sistemas Embarcados (*Embedded*):**
-  * Hardware dedicado com recursos restritos (ROM/Flash), sem instalação direta pelo usuário[cite: 1].
-  * *Aplicações:* Eletrodomésticos, sistemas automotivos[cite: 1].
-  * *Exemplos:* Embedded Linux, QNX, VxWorks[cite: 1].
+```bash
+git config --global user.name "<Nome>"
+git config --global user.email "<Email>"
+```
 
-* 📡 **Nós Sensores:**
-  * Dispositivos diminutos com bateria limitada, orientados a eventos e redes sem fio[cite: 1].
-  * *Exemplos:* TinyOS, Contiki[cite: 1].
+Substitua os campos pela identidade que deseja registrar. A opção `--global` grava a configuração do usuário do Git.
 
-* ⏱️ **Sistemas de Tempo Real (*Real-Time*):**
-  * **Hard Real-Time:** Prazos rígidos; falhas temporais causam danos catastróficos (ex.: controle de voo)[cite: 1].
-  * **Soft Real-Time:** Tolera pequenas degradações/atrasos ocasionais (ex.: streaming de mídia)[cite: 1].
+## Alcance do material
 
-* 💳 **Cartões Inteligentes (*Smart Cards*):**
-  * Memória restrita, segurança avançada/criptografia e isolamento por *applets*[cite: 1].
-
----
-
-## 🐙 2. Controle de Versão com Git & GitHub
-
-* 🛠️ **Git:** Sistema de controle de versão local via linha de comando para rastreamento de mudanças e sincronização de repositórios[cite: 1].
-* ⚙️ **Configuração Inicial:**
-  ```bash
-  git config --global user.name "<Nome>"
-  git config --global user.email "<Email>"
+O resumo original termina nessa configuração inicial. Não há nesta pasta um roteiro completo de commits, branches, publicação ou exercícios de Git. A organização acima preserva o conteúdo disponível e fecha o bloco de comandos que estava incompleto.

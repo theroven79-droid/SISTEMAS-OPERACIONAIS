@@ -1,45 +1,36 @@
-# 🕰️ Resumo: Evolução Histórica dos Sistemas Operacionais
+# Aula 02 — Evolução histórica dos Sistemas Operacionais
 
----
+[Aula anterior](../Aula-1/README.md) · [Índice da disciplina](../README.md) · [Próxima aula](../Aula-3/README.md)
 
-## 🚀 Introdução
-* Os Sistemas Operacionais (SOs) atuam como intermediários entre o usuário e o hardware, simplificando o uso das máquinas[cite: 5].
-* Evoluíram ao longo do tempo para acompanhar os avanços tecnológicos[cite: 5].
+Guia de leitura do estudo histórico disponível em [SO-modernos.md](SO-modernos.md). Esse documento se apresenta como resumo das seções 1.2.1 a 1.2.5 de *Sistemas Operacionais Modernos*, de Tanenbaum e Bos.
 
----
+## Organização do estudo
 
-## 💡 1ª Geração (1945–1955)
-* **Tecnologia:** Válvulas eletrônicas[cite: 5].
-* **Características:** Máquinas gigantes, caras, consumiam muita energia e falhavam frequentemente[cite: 5].
-* **Programação:** Feita diretamente em código de máquina, operando painéis e conexões físicas[cite: 5].
+| Período usado no material | Tecnologia / contexto | Mudanças discutidas |
+|---|---|---|
+| 1945–1955 | Válvulas e operação direta das máquinas | Programação em código de máquina e preparação manual. |
+| 1955–1965 | Transistores e mainframes | Cartões perfurados, separação de funções e processamento em lote. |
+| 1965–1980 | Circuitos integrados | Multiprogramação, proteção de memória, spooling e compartilhamento de tempo. |
+| 1980 em diante | Computadores pessoais | Microprocessadores, CP/M, MS-DOS, interfaces gráficas e redes. |
+| 1990 em diante | Computação móvel | PDAs, smartphones, Symbian, BlackBerry, iOS e Android. |
+| Perspectivas futuras | Discussão sobre próximas mudanças | Possibilidades, sem uma geração futura consolidada no acervo. |
 
-## 📻 2ª Geração (1955–1965)
-* **Tecnologia:** Transistores (substituíram as válvulas)[cite: 5].
-* **Características:** Computadores menores, mais rápidos, mais confiáveis e com viabilidade comercial[cite: 5].
-* **Operação:** Sistemas em Lote (*Batch*), executando tarefas em sequência sem a interação do usuário[cite: 5].
-* **Entrada:** Utilização de cartões perfurados[cite: 5].
+Os intervalos seguem a organização do texto e se sobrepõem em suas fases mais recentes.
 
-## 🔌 3ª Geração (1965–1980)
-* **Tecnologia:** Circuitos integrados[cite: 5].
-* **Inovações:**
-  * **Multiprogramação:** Vários programas armazenados na memória simultaneamente[cite: 5].
-  * **Compartilhamento de tempo:** Múltiplos usuários interagindo via terminais ao mesmo tempo[cite: 5].
-  * **Spooling:** Dados de E/S armazenados em disco, aumentando a eficiência e reduzindo a dependência de fitas[cite: 5].
+## Pontos para acompanhar na leitura
 
-## 💻 4ª Geração (1980–presente)
-* **Tecnologia:** Computadores Pessoais (PCs)[cite: 5].
-* **Inovações:** Interfaces gráficas substituindo comandos textuais, priorizando a facilidade de uso do usuário[cite: 5].
-* **Sistemas:** O UNIX ganhou força como alternativa ao MULTICS (influenciando Linux, macOS e Android), marcando a era de PCs, servidores e smartphones[cite: 5].
+- **Lotes:** o texto descreve um fluxo com IBM 1401 e IBM 7094 e cartões de controle de tarefas.
+- **Multiprogramação:** vários programas em memória permitem usar a CPU enquanto uma tarefa aguarda E/S.
+- **Spooling e timesharing:** preparação de E/S e alternância de atendimento a usuários aparecem como respostas a gargalos.
+- **MULTICS, UNIX, MINIX e Linux:** o documento discute suas relações históricas e o padrão POSIX.
+- **PCs e interfaces:** o estudo aborda CP/M, MS-DOS, Macintosh, Windows e redes.
+- **Dispositivos móveis:** o texto apresenta mudanças de plataformas e interação por toque.
 
-## 📱 5ª Geração (1990–presente)
-* **Tecnologia:** Dispositivos móveis, PDAs e Smartphones[cite: 5].
-* **Marcos Históricos:** Nokia N9000 (combinou telefone e PDA na década de 1990) e o Ericsson GS88 "Penelope" (cunhou o termo *smartphone* em 1997)[cite: 5].
+O documento inclui glossário, cronologia detalhada e conclusão analítica. As afirmações históricas são registros do material de estudo local; este guia não acrescenta uma verificação externa de datas ou de atribuições.
 
-## 🔮 6ª Geração (Futuro)
-* O estudo dos padrões históricos da tecnologia nos permite identificar pistas e nos preparar para as características das próximas gerações de SOs[cite: 5].
+## Atividades registradas
 
----
+1. Elaborar um resumo em Markdown sobre a história dos sistemas operacionais; o enunciado original pede mais de 500 linhas.
+2. Detalhar a linha do tempo no Miro e exportar o resultado em Markdown para o repositório.
 
-## 🎯 Atividades Propostas
-1. 📝 Criar um resumo detalhado (acima de 500 linhas) no formato `.md` sobre a "História dos sistemas operacionais" no repositório do GitHub[cite: 5].
-2. 🗺️ Detalhar e expandir a linha do tempo das gerações na ferramenta Miro, exportando o resultado final para `.md` no repositório GitHub[cite: 5].
+A [linha do tempo da Aula 01](../Aula-1/Linha-do-tempo.md) complementa a navegação. A presença dos arquivos não comprova, por si só, o atendimento a cada critério da entrega.

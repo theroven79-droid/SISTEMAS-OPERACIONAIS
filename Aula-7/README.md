@@ -52,3 +52,38 @@ Preencha o relatório com dados coletados em cada ambiente. A comparação deve 
 ## Endereço registrado no projeto
 
 [Dashboard no Render](https://dashboard-monitoramento-1.onrender.com/)
+
+---
+
+## Fluxo da atividade em nuvem
+
+```mermaid
+flowchart LR
+    A["Código do servidor Node.js"] --> B["Execução local"]
+    B --> C["Deploy em plataforma de nuvem"]
+    C --> D["Coleta de métricas do ambiente"]
+    D --> E["Comparação e relatório"]
+```
+
+## Checklist técnico para reproduzir o projeto
+
+- [ ] Conferir o [package.json](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/package.json) e ter Node.js 18 ou superior.
+- [ ] Executar `npm ci` na pasta do projeto.
+- [ ] Executar `npm start` e abrir `http://localhost:3000`.
+- [ ] Consultar `/api/health` e `/api/dashboard`.
+- [ ] Publicar a aplicação numa plataforma adequada, informando os comandos de build e inicialização.
+- [ ] Registrar os valores efetivamente observados em cada ambiente.
+- [ ] Interpretar diferenças de CPU, memória, rede e uptime considerando os limites do container ou serviço.
+
+## Implantação no Render — parâmetros do projeto
+
+| Campo | Configuração |
+|---|---|
+| Diretório raiz | `Aula-7/NEXUS-OS-OMEGA-V3-REFINADO-PTBR`, caso publique a partir deste repositório |
+| Build command | `npm ci` |
+| Start command | `npm start` |
+| Porta | Definida pelo ambiente (`PORT`), com padrão local 3000 |
+
+O projeto expõe telemetria sem autenticação; avalie o ambiente antes de disponibilizar dados do host publicamente. A função de conexão remota NEXUS LINK ainda possui uma incompatibilidade entre esquemas v2/v3, detalhada no [README técnico do NEXUS OS](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md).
+
+**Documentação complementar:** [Deploy Node/Express no Render](https://render.com/docs/deploy-node-express-app) · [Módulo `os` do Node.js](https://nodejs.org/api/os.html).

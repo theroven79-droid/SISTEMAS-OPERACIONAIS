@@ -53,3 +53,30 @@ Média = (P1 × 0,25) + (P2 × 0,25) + ((PJ + AT) × 0,25)
 A [versão textual](Linha-do-tempo.md) e a [imagem](Linha-do-tempo-imagem.png) são materiais de apoio ao estudo. O texto contém uma repetição de iOS e Android nas entradas de 2007/8 e 2021; essa duplicação permanece no arquivo da atividade.
 
 **Professor:** Me. Deivison S. Takatu — [deivison.takatu@fatec.sp.gov.br](mailto:deivison.takatu@fatec.sp.gov.br).
+
+---
+
+## Como as camadas se relacionam
+
+```mermaid
+flowchart TB
+    A["Aplicações do usuário"] --> B["Serviços e chamadas de sistema"]
+    B --> C["Kernel"]
+    C --> D["CPU, RAM, armazenamento e dispositivos"]
+```
+
+O diagrama é **didático**: simplifica a organização conceitual apresentada na aula, sem representar a arquitetura exata de todo sistema operacional.
+
+## Roteiro de revisão
+
+| Pergunta para estudo | Conceito envolvido |
+|---|---|
+| Quem gerencia processos e memória? | Kernel e gerenciamento de recursos |
+| Por que aplicações não acessam livremente recursos privilegiados? | Modo usuário e modo kernel |
+| Como diferentes processos dividem a CPU? | Escalonamento |
+| Como dados são organizados no armazenamento? | Sistemas de arquivos |
+| O que possibilita usar periféricos? | Entrada/saída e drivers |
+
+**Material visual:** [abrir a linha do tempo ilustrada](Linha-do-tempo-imagem.png) · [versão escrita](Linha-do-tempo.md).
+
+Para aprofundar os marcos históricos, siga para a [Aula 02](../Aula-2/README.md).

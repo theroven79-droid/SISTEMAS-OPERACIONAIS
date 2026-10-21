@@ -1,49 +1,53 @@
-# 📘 Aula 01 — Introdução aos Sistemas Operacionais
+# 📘 Aula 01 — Introdução aos sistemas operacionais
 
 [← Índice da disciplina](../README.md) · [Aula 02 →](../Aula-2/README.md)
 
-Apresentação da disciplina e dos principais conceitos de gerenciamento de recursos em sistemas operacionais.
+Esta aula apresenta os conceitos fundamentais de um **sistema operacional (SO)**, sua relação com o hardware e as funções necessárias para executar e gerenciar programas.
 
 ## 📌 O que é um sistema operacional?
 
-É o software responsável por organizar o uso de recursos do computador e oferecer serviços aos programas, intermediando aplicações e hardware. Exemplos citados no material: Windows, macOS, Linux, Android e iOS.
+É o conjunto de softwares responsável por gerenciar recursos do computador, fornecer serviços às aplicações e organizar a interação com os dispositivos físicos. Windows, Linux, macOS, Android e iOS são exemplos de sistemas operacionais.
 
-## 🧠 Conceitos abordados
+## 🧠 Conceitos principais
 
 | Conceito | Explicação |
 |---|---|
-| Kernel | Núcleo que gerencia recursos e operações privilegiadas |
-| Modo usuário / kernel | Níveis de privilégio e proteção de recursos |
-| Escalonamento | Distribuição do tempo de CPU; exemplos FIFO, Round Robin e prioridade |
-| Memória | Alocação, proteção, paginação, segmentação e memória virtual |
-| Entrada e saída | Comunicação com dispositivos, com apoio de drivers |
-| Sistema de arquivos | Organização dos dados persistidos |
-| Virtualização e segurança | Controle de acesso e ambientes de execução |
+| **Kernel** | Núcleo do sistema operacional, responsável por funções essenciais e operações privilegiadas. |
+| **Modo usuário e modo kernel** | Níveis de privilégio que ajudam a proteger recursos do sistema. |
+| **Escalonamento** | Define como o tempo de CPU é distribuído entre processos ou tarefas. |
+| **Memória** | Envolve alocação, proteção e técnicas como paginação e memória virtual. |
+| **Entrada e saída** | Permite a comunicação com dispositivos, com auxílio de drivers. |
+| **Sistema de arquivos** | Organiza e possibilita o acesso aos dados armazenados. |
+| **Segurança e virtualização** | Relacionam-se à proteção dos recursos e à criação de ambientes de execução. |
 
 ```mermaid
 flowchart TB
-    A[Aplicações] --> B[Serviços do SO]
-    B --> C[Kernel]
-    C --> D[Hardware]
+    A["Aplicações"] --> B["Serviços do sistema operacional"]
+    B --> C["Kernel"]
+    C --> D["Hardware"]
 ```
 
-O diagrama é uma simplificação didática, não uma representação exata de todo kernel.
+O diagrama simplifica a relação entre esses componentes e não representa uma arquitetura única para todos os sistemas operacionais.
 
-## 📂 Material da aula
+## 📂 Materiais disponíveis
 
-| Arquivo | Descrição |
+| Arquivo | Conteúdo |
 |---|---|
-| [Linha-do-tempo.md](Linha-do-tempo.md) | Marcos da evolução dos sistemas operacionais |
-| [Linha-do-tempo-imagem.png](Linha-do-tempo-imagem.png) | Representação gráfica da linha do tempo |
+| [`Linha-do-tempo.md`](Linha-do-tempo.md) | Marcos da evolução histórica dos sistemas operacionais. |
+| [`Linha-do-tempo-imagem.png`](Linha-do-tempo-imagem.png) | Representação visual da linha do tempo. |
 
-O texto da linha do tempo contém entradas repetidas de Android/iOS; a duplicação foi mantida no arquivo original.
+O texto da linha do tempo apresenta algumas referências repetidas a Android e iOS; o material original foi mantido.
 
-## 📝 Atividades e avaliação
+## 📝 Atividades da aula
 
-A proposta da aula inclui formar grupos de **três a cinco integrantes**, enviar nomes, criar um repositório GitHub para a disciplina e construir uma linha do tempo (com referência a Miro), exportando-a em Markdown.
+A proposta inclui formar grupos de **três a cinco integrantes**, informar os nomes dos participantes, criar um repositório GitHub para a disciplina e elaborar uma linha do tempo com apoio do Miro, disponibilizando-a em Markdown.
+
+A expressão de avaliação apresentada no material é:
 
 ```text
 Média = (P1 × 0,25) + (P2 × 0,25) + ((PJ + AT) × 0,25)
 ```
 
-**Professor:** Me. Deivison S. Takatu — [contato institucional](mailto:deivison.takatu@fatec.sp.gov.br).
+**Professor:** Me. Deivison S. Takatu · [deivison.takatu@fatec.sp.gov.br](mailto:deivison.takatu@fatec.sp.gov.br)
+
+[Continuar para a Aula 02 →](../Aula-2/README.md)

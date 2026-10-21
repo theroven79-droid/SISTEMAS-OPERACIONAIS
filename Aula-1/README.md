@@ -2,6 +2,34 @@
 
 [Índice da disciplina](../README.md) · [Aula 02](../Aula-2/README.md)
 
+## 🎮 Fase 01 · Fundamentos do SO
+
+> **Meta de aprendizado:** Construa um mapa mental relacionando aplicações, kernel e recursos de hardware. XP abaixo são **simbólicos**, não ligados às notas da disciplina.
+
+| Nível | Missão com evidência | Material | XP |
+|---|---|---|--:|
+| Identificar | Diferenciar modo usuário e modo kernel | [Resumo desta aula](#estrutura-e-funções) | 15 |
+| Relacionar | Associar CPU, memória e E/S às funções do SO | [Estrutura](#estrutura-e-funções) | 15 |
+| Historicizar | Consultar os marcos cronológicos | [Linha do tempo](Linha-do-tempo.md) | 20 |
+
+**Checkpoints pessoais**
+
+- [ ] Expliquei o papel do kernel em poucas frases.
+- [ ] Diferenciei escalonamento de gerenciamento de memória.
+- [ ] Consultei a linha do tempo em texto ou imagem.
+
+<details>
+<summary><strong>🏅 Missão extra para aprofundamento</strong></summary>
+
+Organize um diagrama próprio de interação entre aplicação, serviço do SO e dispositivo de hardware.
+
+</details>
+
+**Observação:** O fluxograma deste README é didático e não descreve a arquitetura específica de uma versão de Windows, Linux ou macOS.
+
+---
+
+
 Apresentação da disciplina e dos conceitos fundamentais de sistemas operacionais.
 
 ## Materiais

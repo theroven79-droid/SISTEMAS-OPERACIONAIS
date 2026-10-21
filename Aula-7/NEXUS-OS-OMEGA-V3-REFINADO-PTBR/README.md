@@ -1,5 +1,7 @@
 # NEXUS OS Omega V3 — Projeto da Aula 07
 
+![Node.js](https://img.shields.io/badge/Node.js-%E2%89%A518-339933?logo=nodedotjs&logoColor=white) ![NEXUS](https://img.shields.io/badge/NEXUS%20OS-3.1.0-00A7B5)
+
 [Voltar à Aula 07](../README.md) · [Índice da disciplina](../../README.md)
 
 Dashboard de monitoramento em português que apresenta métricas do sistema operacional, do processo Node.js e do serviço HTTP. O projeto está na versão **3.1.0**, conforme o [package.json](package.json).
@@ -140,3 +142,54 @@ curl --fail --silent http://127.0.0.1:3000/api/dashboard
 ```
 
 Para observar o fluxo SSE, use `curl -N http://127.0.0.1:3000/api/stream` e interrompa a consulta com `Ctrl+C` após receber um evento `telemetry`. Se utilizar outra porta, ajuste os comandos.
+
+---
+
+## Visão de arquitetura
+
+```mermaid
+flowchart TB
+    OS["SO · CPU, memória, interfaces e processos"] --> N["Node.js · server.js"]
+    N --> API["Express · APIs de telemetria"]
+    N --> SSE["Fluxo SSE"]
+    API --> UI["Dashboard web"]
+    SSE --> UI
+    UI --> EXP["Relatórios JSON e CSV"]
+    API --> R["Consulta remota · esquema v3"]
+    R -. "Cliente atual exige v2" .-> W["Incompatibilidade conhecida"]
+```
+
+## Primeiro acesso em cinco comandos
+
+Na pasta raiz do repositório da disciplina:
+
+```bash
+cd Aula-7/NEXUS-OS-OMEGA-V3-REFINADO-PTBR
+npm ci
+npm start
+```
+
+Abra **http://localhost:3000** e confira **http://localhost:3000/api/health**. Interrompa o processo com `Ctrl+C`.
+
+## FAQ técnico
+
+| Pergunta | Resposta baseada na implementação |
+|---|---|
+| O monitor mede meu computador quando uso um site remoto? | Não. Mede o host/container do **servidor Node.js**. |
+| Existe banco de dados? | Não há persistência de amostras em banco; o histórico no servidor é temporário. |
+| O observador encerra processos? | Não; opera em **somente leitura**. |
+| Há autenticação nos endpoints? | Não; trate a exposição de telemetria com cuidado. |
+| O NEXUS LINK conecta duas cópias desta versão? | Não diretamente: a API publica esquema v3 e o cliente remoto valida v2. |
+| A aplicação requer `npm run build`? | Não. O script `start` executa `node server.js`. |
+| O Render pode atribuir uma porta diferente? | Sim. O servidor utiliza `process.env.PORT`. |
+
+## Fontes técnicas e documentação
+
+| Assunto | Referência |
+|---|---|
+| Código e contratos das rotas | [server.js](server.js) |
+| Dependências, versão e scripts | [package.json](package.json) |
+| Contexto da atividade | [Aula 07](../README.md) |
+| SSE no navegador | [MDN — Server-sent events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events) |
+| Node.js e informações do host | [Node.js `os`](https://nodejs.org/api/os.html) |
+| Deploy de aplicações Express | [Render Docs](https://render.com/docs/deploy-node-express-app) |

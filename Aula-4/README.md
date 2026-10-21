@@ -1,44 +1,48 @@
-# 🛠️ Aula 04 — Instalação e ramificações de Sistemas Operacionais
+# 🛠️ Aula 04 — Instalação e ramificações de sistemas operacionais
 
-[← Aula 03](../Aula-3/README.md) · [Índice](../README.md) · [Aula 05 →](../Aula-5/README.md)
+[← Aula 03](../Aula-3/README.md) · [Índice da disciplina](../README.md) · [Aula 05 →](../Aula-5/README.md)
 
-Conjunto de atividades que relaciona a instalação do Windows aos componentes do sistema operacional e investiga famílias de plataformas.
+Esta aula reúne duas atividades: uma relaciona a **instalação do Windows aos conceitos de sistemas operacionais**; a outra investiga influências e tecnologias presentes em diferentes plataformas.
 
-## 📂 Materiais
+## 📂 Atividades disponíveis
 
-| Arquivo | Conteúdo |
+| Material | Assunto |
 |---|---|
-| [Atividade-1.md](Atividade-1.md) | Instalação do Windows, kernel, processos, threads, arquivos e drivers |
-| [Atividade-2.md](Atividade-2.md) | Levantamento de bases e influências entre sistemas operacionais |
+| [`Atividade-1.md`](Atividade-1.md) | Processo de instalação do Windows, kernel, processos, arquivos e drivers. |
+| [`Atividade-2.md`](Atividade-2.md) | Comparação de sistemas e suas bases tecnológicas. |
 
 ## ⚙️ Atividade 1 — Instalação do Windows
 
+A atividade descreve as etapas desde a preparação da mídia até a configuração inicial do sistema. O objetivo é relacionar ações práticas de instalação aos seguintes conceitos: componentes do sistema operacional, kernel, modos de execução, processos, diferença entre programa e thread, sistemas de arquivos, entrada e saída e drivers.
+
 ```mermaid
 flowchart LR
-    A[Mídia de instalação] --> B[Boot]
-    B --> C[Discos e partições]
-    C --> D[Instalação de arquivos]
-    D --> E[Drivers e configuração]
+    A["Mídia de instalação"] --> B["Inicialização"]
+    B --> C["Discos e partições"]
+    C --> D["Instalação dos arquivos"]
+    D --> E["Drivers e configuração"]
 ```
 
-O texto relaciona o processo de instalação a **sete temas**: componentes do SO, kernel, modos de execução, processos, diferença entre programa/processo/thread, sistemas de arquivos e dispositivos de E/S.
-
-### Critérios de avaliação registrados
+### Critérios de avaliação apresentados
 
 | Critério | Pontos |
 |---|---:|
 | Descrição do processo | 2 |
-| Componentes do SO | 2 |
+| Componentes do sistema operacional | 2 |
 | Relação entre os conceitos | 3 |
 | Linha do tempo e tabela | 1 |
 | Desafio final | 1 |
 | Organização e Markdown | 1 |
 | **Total** | **10** |
 
-O próprio arquivo da atividade contém explicações e respostas aos desafios.
+As explicações e as respostas propostas estão disponíveis no próprio [arquivo da atividade](Atividade-1.md).
 
-> **Segurança:** formatar ou particionar discos pode apagar dados. O estudo do procedimento não requer formatar um computador real.
+> **Atenção:** operações de formatação e particionamento podem apagar arquivos. O estudo deste material não exige modificar discos reais.
 
-## 🌳 Atividade 2 — Ramificações
+## 🌳 Atividade 2 — Ramificações de sistemas
 
-O material apresenta uma tabela sobre **PS5, Nintendo Switch, Xbox Series S, Android e Steam Deck**, relacionando tecnologias e sistemas de base. O arquivo inicia a representação em árvore do primeiro item, mas não inclui as árvores completas dos demais sistemas.
+O documento compara tecnologias relacionadas a **PlayStation 5, Nintendo Switch, Xbox Series S, Android e Steam Deck**. Ele apresenta uma tabela e inicia a representação em árvore, mas não contém todas as árvores correspondentes aos sistemas analisados.
+
+Leia o conteúdo disponível em [`Atividade-2.md`](Atividade-2.md), sem presumir que as representações ausentes tenham sido concluídas.
+
+[Continuar para a Aula 05 →](../Aula-5/README.md)

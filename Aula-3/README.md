@@ -35,3 +35,42 @@ git config --global user.email "seu-email@exemplo.com"
 ```
 
 Substitua o nome e o e-mail pelos seus dados. A opção `--global` define a identidade padrão do usuário do Git.
+
+---
+
+## Guia prático de identidade no Git
+
+```mermaid
+flowchart LR
+    A["Configurar nome e e-mail"] --> B["Verificar configuração"]
+    B --> C["Realizar commits identificados"]
+```
+
+No Git Bash ou terminal integrado do VS Code:
+
+```bash
+git config --global user.name "Seu Nome"
+git config --global user.email "seu-email@exemplo.com"
+git config --global --get user.name
+git config --global --get user.email
+```
+
+A configuração `--global` é persistida no arquivo de configuração do usuário, portanto normalmente não precisa ser repetida a cada reinício do computador. Para inspecionar as origens das definições:
+
+```bash
+git config --list --show-origin
+```
+
+## Comparando tipos de sistemas operacionais
+
+| Grupo | Prioridade de projeto |
+|---|---|
+| Tempo real | Previsibilidade e cumprimento de prazos |
+| Servidores | Compartilhamento de serviços e atendimento simultâneo |
+| Móveis | Energia, conectividade e sensores |
+| Embarcados | Hardware e finalidade específicos |
+| Computadores pessoais | Interação e variedade de aplicações |
+
+**Referências:** [Documentação oficial do Git](https://git-scm.com/docs/git-config) · [Guia GitHub para começar a usar o Git](https://docs.github.com/pt/get-started/using-git).
+
+[← Aula 02](../Aula-2/README.md) · [Aula 04 →](../Aula-4/README.md).

@@ -23,7 +23,6 @@ O dashboard apresenta informações do ambiente em que o servidor está executan
 ## 🎓 Sobre a disciplina
 
 **Professor:** Me. Deivison S. Takatu  
-**Contato:** [deivison.takatu@fatec.sp.gov.br](mailto:deivison.takatu@fatec.sp.gov.br)
 
 ### 📖 Referências registradas nos materiais
 

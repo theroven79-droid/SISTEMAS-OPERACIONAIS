@@ -1,36 +1,23 @@
-# 🕰️ Relatório da pasta — Aula 02: evolução histórica
+# 🖥️ Aula 02 — Evolução dos Sistemas Operacionais
 
-[← Aula 01](../Aula-1/README.md) · [Relatório da disciplina](../README.md) · [Aula 03 →](../Aula-3/README.md)
+Como os computadores passaram das válvulas aos dispositivos móveis? Nesta aula, a evolução do **hardware** é apresentada junto às mudanças na forma de executar programas, compartilhar recursos e interagir com as máquinas.
 
-## 📌 Resumo
+## 📖 Material de estudo
 
-A aula estuda a **evolução dos computadores e dos sistemas operacionais**, relacionando as mudanças do hardware às formas de processamento e interação com o usuário. O principal material está reunido em um documento extenso de Markdown.
+O arquivo [**SO-modernos.md**](SO-modernos.md) reúne um estudo histórico baseado nas seções 1.2.1 a 1.2.5 de *Sistemas Operacionais Modernos*, de **Andrew S. Tanenbaum e Herbert Bos**. Além das explicações, o texto contém uma linha do tempo detalhada e um glossário.
 
-## 📂 Arquivos da pasta
+## 🧭 Percurso histórico
 
-| Arquivo | Descrição |
+| Período abordado | Principais conceitos |
 |---|---|
-| [`SO-modernos.md`](SO-modernos.md) | Estudo histórico baseado em conteúdos de *Sistemas Operacionais Modernos*, de Tanenbaum e Bos, incluindo conceitos, linha do tempo e glossário. |
-| `README.md` | Relatório resumido e caminho de acesso ao documento principal. |
+| **1945–1955** | Válvulas, primeiros computadores eletrônicos e programação direta das máquinas. |
+| **1955–1965** | Transistores, mainframes e processamento em lote (*batch*). |
+| **1965–1980** | Circuitos integrados, multiprogramação, *spooling* e tempo compartilhado. |
+| **A partir de 1980** | Computadores pessoais, interfaces gráficas e expansão das redes. |
+| **Expansão da computação móvel** | Smartphones e sistemas voltados a dispositivos portáteis. |
 
-## 🧠 Conteúdo abordado
+O material também acompanha a trajetória de sistemas como **MULTICS, UNIX, MINIX, Linux, CP/M e MS-DOS** e apresenta conceitos de sistemas distribuídos e padronização de interfaces.
 
-| Período aproximado apresentado | Características em destaque |
-|---|---|
-| 1945–1955 | Computadores com válvulas e programação em linguagem de máquina. |
-| 1955–1965 | Transistores, computadores de grande porte e processamento em lote. |
-| 1965–1980 | Circuitos integrados, multiprogramação e spooling. |
-| A partir de 1980 | Computadores pessoais, interfaces gráficas e redes. |
-| A partir de 1990 | Expansão de sistemas móveis e novos ambientes de execução. |
+---
 
-O documento também aborda sistemas como **MULTICS, UNIX, MINIX, Linux, CP/M e MS-DOS**, além de conceitos como compartilhamento de tempo, sistemas distribuídos e padronização de interfaces.
-
-## 📝 Atividades relacionadas
-
-As propostas registradas incluem a elaboração de um resumo em Markdown com extensão definida pelo professor e a ampliação da linha do tempo em ferramenta visual.
-
-## 🔎 Considerações
-
-A divisão histórica por gerações é **didática**: os períodos podem se sobrepor, especialmente nas fases mais recentes. O documento [`SO-modernos.md`](SO-modernos.md) oferece o aprofundamento necessário; este relatório apresenta apenas seus principais eixos de estudo.
-
-**Material complementar:** [Linha do tempo da Aula 01](../Aula-1/Linha-do-tempo.md).
+[← Aula 01](../Aula-1/README.md) · [📚 Índice da disciplina](../README.md) · [Aula 03 →](../Aula-3/README.md)

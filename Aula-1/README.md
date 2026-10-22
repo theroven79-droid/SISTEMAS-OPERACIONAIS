@@ -1,33 +1,24 @@
-# 📘 Relatório da pasta — Aula 01: introdução aos sistemas operacionais
+# 🕰️ Aula 01 — Introdução aos Sistemas Operacionais
 
-[← Relatório da disciplina](../README.md) · [Aula 02 →](../Aula-2/README.md)
+A primeira aula apresenta o papel dos **sistemas operacionais** no funcionamento do computador e propõe uma viagem por momentos importantes de sua evolução.
 
-## 📌 Resumo
+## 📌 Temas da aula
 
-A primeira aula apresenta os **conceitos fundamentais dos sistemas operacionais**, com destaque para a função do kernel, a administração de recursos e a evolução histórica desses sistemas. A pasta contém uma linha do tempo em Markdown e sua representação visual.
+O estudo começa pela relação entre programas, hardware e sistema operacional. Entre os conceitos abordados estão o **kernel**, o gerenciamento de processos e memória, o escalonamento de tarefas, os sistemas de arquivos e a comunicação com dispositivos de entrada e saída.
 
-## 📂 Materiais encontrados
+A parte histórica reúne acontecimentos que ajudam a entender como os sistemas passaram de ambientes voltados a grandes computadores para plataformas de uso pessoal e móvel.
 
-| Arquivo | Conteúdo |
+## 📂 Materiais disponíveis
+
+| Arquivo | O que apresenta |
 |---|---|
-| [`Linha-do-tempo.md`](Linha-do-tempo.md) | Registra acontecimentos relacionados à evolução dos sistemas operacionais. |
-| [`Linha-do-tempo-imagem.png`](Linha-do-tempo-imagem.png) | Apresenta a linha do tempo em formato de imagem. |
-| `README.md` | Reúne o relatório e o índice dos materiais da aula. |
+| [📄 Linha-do-tempo.md](Linha-do-tempo.md) | Marcos históricos, incluindo GM-NAA I/O, UNIX, MS-DOS, Windows, Linux, macOS e sistemas móveis. |
+| [🖼️ Linha-do-tempo-imagem.png](Linha-do-tempo-imagem.png) | Representação visual da linha do tempo. |
 
-## 🧠 Principais assuntos
+A atividade da aula também propõe registrar os estudos no GitHub e construir uma linha do tempo em grupo, utilizando uma ferramenta visual como o Miro.
 
-| Tema | Síntese |
-|---|---|
-| Sistema operacional | Software que administra recursos e oferece serviços às aplicações. |
-| Kernel e modos de execução | Núcleo do sistema e níveis de privilégio de operações. |
-| Escalonamento | Distribuição do tempo de CPU entre tarefas. |
-| Memória e arquivos | Organização da memória e dos dados armazenados. |
-| Entrada e saída | Comunicação entre o computador e seus dispositivos. |
+---
 
-A proposta da aula também inclui a formação de grupos de três a cinco integrantes, o uso do GitHub para registrar estudos e a elaboração de uma linha do tempo com apoio do Miro.
+📚 [Índice da disciplina](../README.md) · [Próxima aula →](../Aula-2/README.md)
 
-## 🔎 Considerações
-
-Os exemplos de sistemas citados no material abrangem Windows, Linux, macOS, Android e iOS. O texto da linha do tempo contém referências repetidas a Android e iOS em determinados períodos; essa característica pertence ao arquivo original.
-
-**Professor:** Me. Deivison S. Takatu · [Contato institucional](mailto:deivison.takatu@fatec.sp.gov.br).
+**Professor:** Me. Deivison S. Takatu · [Contato institucional](mailto:deivison.takatu@fatec.sp.gov.br)

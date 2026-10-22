@@ -1,46 +1,31 @@
-# 💻 Relatório geral — Sistemas Operacionais
+# 💻 Sistemas Operacionais
 
-## 📌 Apresentação do repositório
+Este repositório reúne anotações, atividades e projetos desenvolvidos durante os estudos de **Sistemas Operacionais**. Os materiais estão organizados por aula e acompanham temas que vão da evolução da computação ao monitoramento de servidores na nuvem.
 
-Este repositório reúne **materiais acadêmicos da disciplina de Sistemas Operacionais**, incluindo resumos, atividades, linha do tempo, comparações de distribuições Linux e um projeto de monitoramento desenvolvido em Node.js. As pastas estão organizadas por aula e possuem relatórios específicos para orientar a consulta aos arquivos.
+## 📚 Conteúdo das aulas
 
-**Professor:** Me. Deivison S. Takatu · **Contato:** [deivison.takatu@fatec.sp.gov.br](mailto:deivison.takatu@fatec.sp.gov.br)
-
-## 📂 Organização das pastas
-
-| Pasta | Conteúdo principal | Relatório |
+| Aula | Assunto | Material |
 |---|---|---|
-| `Aula-1/` | Introdução aos sistemas operacionais e linha do tempo em texto e imagem. | [Aula 01](Aula-1/README.md) |
-| `Aula-2/` | Estudo histórico sobre as gerações e a evolução dos sistemas operacionais. | [Aula 02](Aula-2/README.md) |
-| `Aula-3/` | Categorias de sistemas operacionais e configuração básica do Git. | [Aula 03](Aula-3/README.md) |
-| `Aula-4/` | Atividades sobre instalação do Windows e ramificações de sistemas. | [Aula 04](Aula-4/README.md) |
-| `Aula-5/` | Comparação qualitativa de cinco distribuições Linux. | [Aula 05](Aula-5/README.md) |
-| `Aula-6/` | Pasta sem materiais adicionais além de seu README. | [Aula 06](Aula-6/README.md) |
-| `Aula-7/` | Estudo sobre nuvem, Node.js, Express e projeto NEXUS OS. | [Aula 07](Aula-7/README.md) |
+| **01** | Conceitos iniciais e marcos da evolução dos sistemas operacionais | [Linha do tempo e materiais](Aula-1/README.md) |
+| **02** | Gerações dos computadores, processamento em lote, multiprogramação e sistemas modernos | [Estudo histórico](Aula-2/README.md) |
+| **03** | Tipos de sistemas operacionais e configuração da identidade no Git | [Conceitos e comandos](Aula-3/README.md) |
+| **04** | Instalação do Windows e origens de sistemas presentes em diferentes dispositivos | [Atividades](Aula-4/README.md) |
+| **05** | Comparação entre cinco distribuições Linux | [Estudo comparativo](Aula-5/README.md) |
+| **06** | Navegação pela sequência de aulas | [Aula 06](Aula-6/README.md) |
+| **07** | Node.js, APIs, monitoramento de recursos e computação em nuvem | [Resumo e projeto prático](Aula-7/README.md) |
 
-## 🧠 Síntese dos assuntos estudados
+## ☁️ Projeto em destaque: NEXUS OS
 
-Os materiais iniciam com a função do sistema operacional no gerenciamento de recursos, abordando **kernel, processos, escalonamento, memória, arquivos e dispositivos**. Em seguida, percorrem a evolução histórica da computação, diferentes categorias de sistemas operacionais e a configuração inicial do Git.
+Na **Aula 07**, os conceitos de sistemas operacionais ganham uma aplicação prática com o [NEXUS OS Omega V3](Aula-7/NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md), um painel web desenvolvido em **Node.js e Express**.
 
-As atividades intermediárias relacionam a instalação do Windows a conceitos de arquitetura e apresentam uma comparação de distribuições Linux, com critérios definidos para fins acadêmicos.
+O dashboard apresenta informações do ambiente em que o servidor está executando, como uso de CPU e memória, processos, rede e métricas das requisições HTTP. A proposta da aula também relaciona a execução local à hospedagem na nuvem, permitindo estudar as diferenças entre esses ambientes.
 
-## 📊 Projeto prático da Aula 07
+## 🎓 Sobre a disciplina
 
-A pasta [`Aula-7/NEXUS-OS-OMEGA-V3-REFINADO-PTBR/`](Aula-7/NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md) contém um dashboard que consulta métricas do ambiente de execução. O projeto utiliza Node.js e Express para apresentar informações sobre CPU, memória, rede, processos e requisições HTTP.
+**Professor:** Me. Deivison S. Takatu  
+**Contato:** [deivison.takatu@fatec.sp.gov.br](mailto:deivison.takatu@fatec.sp.gov.br)
 
-O material também propõe comparar a aplicação executada localmente com sua execução em nuvem. O painel mede os recursos disponíveis **ao servidor**, e não ao dispositivo de quem acessa a interface.
-
-## 📝 Informação acadêmica registrada
-
-Na introdução da disciplina consta a seguinte expressão de avaliação:
-
-```text
-Média = (P1 × 0,25) + (P2 × 0,25) + ((PJ + AT) × 0,25)
-```
-
-A fórmula foi mantida conforme o material, sem presumir que continue sendo o critério vigente. Para informações de avaliação e entrega, devem prevalecer as orientações do professor.
-
-## 📚 Referências mencionadas no material
+### 📖 Referências registradas nos materiais
 
 - TANENBAUM, A. S.; BOS, H. *Sistemas Operacionais Modernos*. 4. ed. Pearson, 2016.
 - SILBERSCHATZ, A.; GALVIN, P. B.; GAGNE, G. *Fundamentos de Sistemas Operacionais*. 9. ed. LTC, 2015.
@@ -49,4 +34,4 @@ A fórmula foi mantida conforme o material, sem presumir que continue sendo o cr
 - AWASTHI, A.; RAWAT, V. *Ramificação e Tarefas do Sistema Operacional*. Edições Nosso Conhecimento, 2023.
 - DOWNEY, A. B. *Think OS*. Green Tea Press, 2015.
 - RED HAT. *Red Hat Enterprise Linux — System Administration Guide*. Documentação oficial.
-- [Docker — Documentação](https://docs.docker.com/).
+- [Docker — Documentação oficial](https://docs.docker.com/).

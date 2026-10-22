@@ -1,25 +1,27 @@
-# 🛠️ Relatório da pasta — Aula 04: instalação e ramificações
+# 🛠️ Aula 04 — Instalação e Ramificações dos Sistemas Operacionais
 
-[← Aula 03](../Aula-3/README.md) · [Relatório da disciplina](../README.md) · [Aula 05 →](../Aula-5/README.md)
+Os dois materiais desta pasta exploram a estrutura dos sistemas operacionais por caminhos diferentes: o processo de instalação do **Windows** e as tecnologias que influenciaram plataformas utilizadas em computadores, consoles e dispositivos móveis.
 
-## 📌 Resumo
+## 📂 Atividades
 
-Esta pasta contém **duas atividades sobre sistemas operacionais**. A primeira relaciona a instalação do Windows a conceitos de arquitetura e gerenciamento de recursos; a segunda compara as bases tecnológicas de diferentes plataformas.
+### 💿 [Atividade 1 — Formatação e instalação do Windows](Atividade-1.md)
 
-## 📂 Arquivos analisados
+Apresenta as etapas que vão da preparação de uma mídia de instalação à primeira inicialização do sistema. Ao longo do percurso, relaciona **boot**, BIOS/UEFI, kernel, processos, threads, memória, sistemas de arquivos, drivers e operações de entrada e saída.
 
-| Arquivo | Conteúdo |
-|---|---|
-| [`Atividade-1.md`](Atividade-1.md) | Estudo das etapas de instalação do Windows e sua relação com kernel, processos, memória, dispositivos e arquivos. |
-| [`Atividade-2.md`](Atividade-2.md) | Levantamento de tecnologias e influências presentes em sistemas de diferentes dispositivos. |
-| `README.md` | Relatório resumido dos dois materiais. |
+O documento inclui uma tabela com a sequência da instalação, orientações para elaborar a atividade em Markdown e uma rubrica de avaliação de **10 pontos**. A proposta é compreender o funcionamento do sistema durante a instalação, e não simplesmente reproduzir uma lista de comandos.
 
-## 🧠 Síntese das atividades
+### 🌳 [Atividade 2 — Ramificações dos sistemas operacionais](Atividade-2.md)
 
-**Atividade 1 — Instalação do Windows.** Descreve o percurso desde a preparação da mídia e a inicialização do computador até a seleção do armazenamento, a instalação de arquivos e a configuração de drivers. As explicações relacionam esse processo a componentes do sistema operacional, modos de execução, processos, threads, sistemas de arquivos e entrada e saída. A atividade possui critérios de avaliação que somam **10 pontos**.
+Compara a origem e as influências tecnológicas de cinco plataformas:
 
-**Atividade 2 — Ramificações.** Apresenta uma comparação envolvendo **PlayStation 5, Nintendo Switch, Xbox Series S, Android e Steam Deck**. O documento contém uma tabela e inicia uma representação em árvore, mas não inclui todas as árvores correspondentes aos itens estudados.
+- **PlayStation 5** e sua relação com o FreeBSD;
+- **Nintendo Switch** e o sistema Horizon;
+- **Xbox Series S** e a família Windows NT;
+- **Android** e o kernel Linux;
+- **Steam Deck** e o SteamOS baseado em Arch Linux.
 
-## 🔎 Considerações
+A atividade organiza essas relações em uma tabela e em uma representação em árvore.
 
-Os materiais têm finalidade acadêmica. A atividade de instalação **não exige formatar um computador real**: operações de particionamento e formatação podem apagar dados. Para consultar os conceitos detalhados e as questões propostas, leia os arquivos originais da pasta.
+---
+
+[← Aula 03](../Aula-3/README.md) · [📚 Índice da disciplina](../README.md) · [Aula 05 →](../Aula-5/README.md)

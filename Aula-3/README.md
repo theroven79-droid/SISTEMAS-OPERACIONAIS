@@ -1,40 +1,39 @@
-# 💻 Relatório da pasta — Aula 03: tipos de sistemas operacionais e Git
+# 💻 Aula 03 — Tipos de Sistemas Operacionais e Git
 
-[← Aula 02](../Aula-2/README.md) · [Relatório da disciplina](../README.md) · [Aula 04 →](../Aula-4/README.md)
+Esta aula reúne duas frentes de estudo: os diferentes ambientes em que um **sistema operacional** pode atuar e os primeiros comandos para configurar a identidade de quem utiliza o **Git**.
 
-## 📌 Resumo
+## 🧠 Onde os sistemas operacionais são utilizados?
 
-O conteúdo desta aula combina dois assuntos: a **classificação dos sistemas operacionais conforme sua aplicação** e a **configuração da identidade do usuário no Git**. A pasta contém o próprio `README.md`, que registra os conceitos e comandos estudados.
-
-## 🧠 Tipos de sistemas operacionais
-
-| Categoria | Características gerais |
+| Categoria | Contexto de uso |
 |---|---|
-| Mainframes e servidores | Processamento de grande volume de dados e fornecimento de serviços. |
-| Multiprocessadores | Execução de tarefas em vários processadores ou núcleos. |
-| Computadores pessoais | Aplicações de uso geral e interfaces para interação com usuários. |
-| Sistemas móveis | Recursos adaptados a dispositivos portáteis, sensores e consumo de energia. |
-| Sistemas embarcados e nós sensores | Funcionamento voltado a finalidades específicas e, muitas vezes, a recursos limitados. |
-| Sistemas de tempo real | Execução de tarefas sujeitas a prazos de resposta. |
-| Cartões inteligentes | Processamento e armazenamento restritos, com foco em segurança. |
+| **Mainframes e servidores** | Processamento de grandes volumes de dados e oferta de serviços. |
+| **Multiprocessadores** | Distribuição do processamento entre vários processadores ou núcleos. |
+| **Computadores pessoais** | Aplicações de uso cotidiano e interação com o usuário. |
+| **Dispositivos móveis** | Smartphones e tablets, com atenção a recursos portáteis. |
+| **Embarcados e nós sensores** | Equipamentos dedicados a funções específicas. |
+| **Tempo real** | Aplicações que precisam respeitar prazos de resposta, rígidos ou flexíveis. |
+| **Cartões inteligentes** | Operações em dispositivos com recursos computacionais restritos. |
 
-A distinção entre tempo real **rígido (*hard real-time*)** e **flexível (*soft real-time*)** também faz parte do conteúdo.
+## 🔧 Configuração inicial do Git
 
-## 🔧 Comandos Git registrados
-
-A aula apresenta comandos para definir e consultar a identidade padrão utilizada nos commits:
+Os comandos abaixo definem o nome e o e-mail associados aos commits realizados no computador:
 
 ```bash
 git config --global user.name "Seu Nome"
 git config --global user.email "seu-email@exemplo.com"
+```
+
+Para consultar os valores configurados:
+
+```bash
 git config --global --get user.name
 git config --global --get user.email
 ```
 
-A opção `--global` preserva a configuração no ambiente do usuário, normalmente entre reinicializações. Essa definição **não substitui a autenticação na plataforma GitHub**.
+A opção `--global` mantém essas informações na configuração do usuário. Ela não substitui o login ou a autenticação no GitHub.
 
-## 🔎 Considerações
+**Referência:** [Documentação do `git config`](https://git-scm.com/docs/git-config).
 
-O material reúne conceitos de arquitetura e exemplos de diferentes ambientes de execução. Os comandos apresentados dizem respeito à configuração local do Git; não criam repositórios nem publicam arquivos automaticamente.
+---
 
-**Referência:** [Documentação oficial de `git config`](https://git-scm.com/docs/git-config).
+[← Aula 02](../Aula-2/README.md) · [📚 Índice da disciplina](../README.md) · [Aula 04 →](../Aula-4/README.md)

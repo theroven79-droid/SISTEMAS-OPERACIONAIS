@@ -1,31 +1,31 @@
-# ☁️ Relatório da pasta — Aula 07: sistemas operacionais na nuvem
+# ☁️ Aula 07 — Sistemas Operacionais na Nuvem
 
-[← Aula 06](../Aula-6/README.md) · [Relatório da disciplina](../README.md)
+Nesta aula, o estudo de sistemas operacionais sai da teoria e chega a uma aplicação web: um painel que consulta recursos do ambiente de execução e permite observar diferenças entre um computador local e um servidor hospedado na nuvem.
 
-## 📌 Resumo
-
-A Aula 07 relaciona **Node.js, Express, computação em nuvem e monitoramento do sistema operacional**. O conteúdo reúne um resumo teórico e um projeto prático de dashboard, além de orientações para comparar ambientes locais e serviços publicados na nuvem.
-
-## 📂 Arquivos e subpastas
+## 📂 Materiais da aula
 
 | Material | Conteúdo |
 |---|---|
-| [`Resumo_Aula_07_Nuvem_Sistemas_Operacionais.md`](Resumo_Aula_07_Nuvem_Sistemas_Operacionais.md) | Texto de apoio sobre Node.js, Express, CORS, Render e comparação entre ambientes. |
-| [`NEXUS-OS-OMEGA-V3-REFINADO-PTBR/`](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md) | Projeto do painel NEXUS OS, com código-fonte, manifesto de dependências e relatório técnico. |
-| `README.md` | Resumo e índice dos materiais da aula. |
+| [📚 Resumo — Nuvem e Sistemas Operacionais](Resumo_Aula_07_Nuvem_Sistemas_Operacionais.md) | Conceitos de Node.js, Express, APIs, CORS, Render e comparação entre ambientes. |
+| [📊 NEXUS OS Omega V3](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md) | Projeto prático de monitoramento desenvolvido com Node.js e Express. |
 
-## 🧠 Conteúdo do projeto
+## 🎯 O que a aula conecta
 
-O dashboard da subpasta NEXUS OS utiliza o Node.js para reunir informações relacionadas ao processador, à memória, à rede, aos processos e ao tempo de atividade. Essas informações são disponibilizadas por rotas HTTP e apresentadas em uma interface web.
+- **API e servidor web:** utilização do Express para disponibilizar informações por meio de rotas HTTP.
+- **Monitoramento:** acompanhamento de CPU, memória, tempo de atividade, rede e outros indicadores do servidor.
+- **Computação em nuvem:** publicação da aplicação e observação das características do ambiente remoto.
+- **Comparação de ambientes:** estudo das diferenças entre uma execução local e serviços de hospedagem, incluindo a proposta de experimentar um segundo provedor.
 
-A proposta também inclui executar a aplicação em mais de um ambiente e observar diferenças de plataforma, arquitetura, recursos e comportamento do serviço. Em uma hospedagem remota, as métricas coletadas correspondem ao **ambiente do servidor**, e não ao computador do visitante.
+O NEXUS OS apresenta os dados **da máquina ou do contêiner em que a aplicação está sendo executada**, e não do dispositivo que abre a página no navegador.
 
-## ☁️ Publicação e observações
+## 🌐 Projeto publicado
 
-O projeto pode ser configurado no Render utilizando a subpasta do NEXUS OS como diretório da aplicação, `npm ci` como comando de instalação e `npm start` para inicialização.
+O material registra o endereço [**Dashboard no Render**](https://dashboard-monitoramento-1.onrender.com/) como referência de publicação do projeto.
 
-**Endereço registrado no material:** [Dashboard no Render](https://dashboard-monitoramento-1.onrender.com/). O endereço não confirma disponibilidade em tempo real.
+Para conhecer os recursos do painel e consultar os arquivos da aplicação, acesse o [README do NEXUS OS](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md).
 
-A implementação contém uma incompatibilidade de esquemas na função NEXUS LINK e disponibiliza rotas de telemetria sem autenticação. Esses aspectos são detalhados no [relatório técnico do projeto](NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md).
+**Leituras úteis:** [Node.js — módulo `os`](https://nodejs.org/api/os.html) · [Render — aplicações Node/Express](https://render.com/docs/deploy-node-express-app)
 
-**Referências:** [Node.js — módulo `os`](https://nodejs.org/api/os.html) · [Render — deploy Node/Express](https://render.com/docs/deploy-node-express-app).
+---
+
+[← Aula 06](../Aula-6/README.md) · [📚 Índice da disciplina](../README.md)

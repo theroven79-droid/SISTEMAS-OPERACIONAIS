@@ -1,49 +1,40 @@
-# 💻 Aula 03 — Tipos de sistemas operacionais e introdução ao Git
+# 💻 Relatório da pasta — Aula 03: tipos de sistemas operacionais e Git
 
-[← Aula 02](../Aula-2/README.md) · [Índice da disciplina](../README.md) · [Aula 04 →](../Aula-4/README.md)
+[← Aula 02](../Aula-2/README.md) · [Relatório da disciplina](../README.md) · [Aula 04 →](../Aula-4/README.md)
 
-A aula apresenta diferentes categorias de sistemas operacionais e introduz os comandos necessários para configurar a identidade utilizada nos commits do Git.
+## 📌 Resumo
 
-## 🧠 Categorias de sistemas operacionais
+O conteúdo desta aula combina dois assuntos: a **classificação dos sistemas operacionais conforme sua aplicação** e a **configuração da identidade do usuário no Git**. A pasta contém o próprio `README.md`, que registra os conceitos e comandos estudados.
 
-| Categoria | Características | Exemplos ou aplicações citados |
-|---|---|---|
-| Mainframes | Processamento de grande volume de transações e operações de entrada e saída. | OS/360, OS/390, Linux e UNIX. |
-| Servidores | Disponibilização de serviços de rede e atendimento simultâneo a usuários. | Linux e Windows Server. |
-| Multiprocessadores | Processamento paralelo e sincronização entre CPUs ou núcleos. | Equipamentos com múltiplos processadores ou núcleos. |
-| Computadores pessoais | Execução de aplicações de uso geral e interfaces gráficas. | Windows, macOS e Linux. |
-| Dispositivos móveis | Gerenciamento de energia, sensores e aplicações. | Android e iOS. |
-| Sistemas embarcados | Execução em dispositivos com finalidades específicas. | Embedded Linux, QNX e VxWorks. |
-| Nós sensores | Operação com poucos recursos e consumo reduzido de energia. | TinyOS e Contiki. |
-| Tempo real | Cumprimento de prazos de resposta. | Sistemas de controle e aplicações críticas. |
-| Cartões inteligentes | Restrições de processamento e memória, com recursos de segurança. | Smart cards. |
+## 🧠 Tipos de sistemas operacionais
 
-Nos sistemas de **tempo real rígido (*hard real-time*)**, o descumprimento de um prazo pode comprometer o funcionamento esperado. Nos sistemas de **tempo real flexível (*soft real-time*)**, atrasos podem provocar perda de qualidade sem necessariamente inviabilizar toda a operação.
+| Categoria | Características gerais |
+|---|---|
+| Mainframes e servidores | Processamento de grande volume de dados e fornecimento de serviços. |
+| Multiprocessadores | Execução de tarefas em vários processadores ou núcleos. |
+| Computadores pessoais | Aplicações de uso geral e interfaces para interação com usuários. |
+| Sistemas móveis | Recursos adaptados a dispositivos portáteis, sensores e consumo de energia. |
+| Sistemas embarcados e nós sensores | Funcionamento voltado a finalidades específicas e, muitas vezes, a recursos limitados. |
+| Sistemas de tempo real | Execução de tarefas sujeitas a prazos de resposta. |
+| Cartões inteligentes | Processamento e armazenamento restritos, com foco em segurança. |
 
-## ⚙️ Configurar nome e e-mail no Git
+A distinção entre tempo real **rígido (*hard real-time*)** e **flexível (*soft real-time*)** também faz parte do conteúdo.
 
-No Git Bash ou em outro terminal com Git instalado:
+## 🔧 Comandos Git registrados
+
+A aula apresenta comandos para definir e consultar a identidade padrão utilizada nos commits:
 
 ```bash
 git config --global user.name "Seu Nome"
 git config --global user.email "seu-email@exemplo.com"
-```
-
-Para verificar os valores configurados:
-
-```bash
 git config --global --get user.name
 git config --global --get user.email
 ```
 
-Para consultar a origem das configurações:
+A opção `--global` preserva a configuração no ambiente do usuário, normalmente entre reinicializações. Essa definição **não substitui a autenticação na plataforma GitHub**.
 
-```bash
-git config --list --show-origin
-```
+## 🔎 Considerações
 
-A opção `--global` define as informações padrão do usuário e normalmente mantém essas configurações entre reinicializações. **Ela não autentica a conta no GitHub**; autenticação e identidade dos commits são conceitos diferentes.
+O material reúne conceitos de arquitetura e exemplos de diferentes ambientes de execução. Os comandos apresentados dizem respeito à configuração local do Git; não criam repositórios nem publicam arquivos automaticamente.
 
-**Referência:** [documentação oficial de `git config`](https://git-scm.com/docs/git-config).
-
-[Continuar para a Aula 04 →](../Aula-4/README.md)
+**Referência:** [Documentação oficial de `git config`](https://git-scm.com/docs/git-config).

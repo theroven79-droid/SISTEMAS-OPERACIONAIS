@@ -1,38 +1,36 @@
-# 🕰️ Aula 02 — Evolução histórica dos sistemas operacionais
+# 🕰️ Relatório da pasta — Aula 02: evolução histórica
 
-[← Aula 01](../Aula-1/README.md) · [Índice da disciplina](../README.md) · [Aula 03 →](../Aula-3/README.md)
+[← Aula 01](../Aula-1/README.md) · [Relatório da disciplina](../README.md) · [Aula 03 →](../Aula-3/README.md)
 
-Esta aula aborda a evolução dos computadores e dos sistemas operacionais, destacando como as mudanças no hardware influenciaram as técnicas de processamento e a interação com os usuários.
+## 📌 Resumo
 
-## 📚 Material principal
+A aula estuda a **evolução dos computadores e dos sistemas operacionais**, relacionando as mudanças do hardware às formas de processamento e interação com o usuário. O principal material está reunido em um documento extenso de Markdown.
 
-O documento [`SO-modernos.md`](SO-modernos.md) desenvolve os conteúdos históricos estudados na disciplina, com base nas seções 1.2.1 a 1.2.5 de *Sistemas Operacionais Modernos*, de Andrew S. Tanenbaum e Herbert Bos. Também contém glossário e referências a sistemas como MULTICS, UNIX, MINIX, Linux, POSIX, CP/M e MS-DOS.
+## 📂 Arquivos da pasta
 
-## 📊 Panorama histórico
+| Arquivo | Descrição |
+|---|---|
+| [`SO-modernos.md`](SO-modernos.md) | Estudo histórico baseado em conteúdos de *Sistemas Operacionais Modernos*, de Tanenbaum e Bos, incluindo conceitos, linha do tempo e glossário. |
+| `README.md` | Relatório resumido e caminho de acesso ao documento principal. |
 
-| Geração | Período aproximado apresentado | Características |
-|---|---|---|
-| Primeira | 1945–1955 | Válvulas e programação em linguagem de máquina. |
-| Segunda | 1955–1965 | Transistores, mainframes e processamento em lote. |
-| Terceira | 1965–1980 | Circuitos integrados, multiprogramação e spooling. |
-| Quarta | A partir de 1980 | Computadores pessoais, interfaces gráficas, redes e sistemas distribuídos. |
-| Quinta | A partir de 1990 | Expansão dos dispositivos móveis e de novos ambientes de execução. |
+## 🧠 Conteúdo abordado
 
-Essa divisão segue o **material de estudo** e tem finalidade didática. As mudanças tecnológicas não ocorreram em períodos totalmente isolados.
+| Período aproximado apresentado | Características em destaque |
+|---|---|
+| 1945–1955 | Computadores com válvulas e programação em linguagem de máquina. |
+| 1955–1965 | Transistores, computadores de grande porte e processamento em lote. |
+| 1965–1980 | Circuitos integrados, multiprogramação e spooling. |
+| A partir de 1980 | Computadores pessoais, interfaces gráficas e redes. |
+| A partir de 1990 | Expansão de sistemas móveis e novos ambientes de execução. |
 
-## 💡 Conceitos em destaque
+O documento também aborda sistemas como **MULTICS, UNIX, MINIX, Linux, CP/M e MS-DOS**, além de conceitos como compartilhamento de tempo, sistemas distribuídos e padronização de interfaces.
 
-- **Processamento em lote:** execução de grupos de tarefas organizadas previamente.
-- **Multiprogramação:** manutenção de mais de um programa na memória para aproveitar a CPU enquanto outra tarefa aguarda entrada ou saída.
-- **Spooling:** armazenamento intermediário de dados destinados a dispositivos de entrada ou saída.
-- **Compartilhamento de tempo:** alternância do atendimento entre tarefas e usuários.
-- **Interface gráfica:** interação por elementos visuais, como janelas e menus.
+## 📝 Atividades relacionadas
 
-## 📝 Atividades propostas
+As propostas registradas incluem a elaboração de um resumo em Markdown com extensão definida pelo professor e a ampliação da linha do tempo em ferramenta visual.
 
-1. Produzir um resumo em Markdown sobre a história dos sistemas operacionais, conforme a orientação de extensão apresentada na aula (mais de 500 linhas).
-2. Ampliar a linha do tempo no Miro e disponibilizar sua exportação em Markdown no repositório.
+## 🔎 Considerações
 
-**Para complementar:** [linha do tempo da Aula 01](../Aula-1/Linha-do-tempo.md).
+A divisão histórica por gerações é **didática**: os períodos podem se sobrepor, especialmente nas fases mais recentes. O documento [`SO-modernos.md`](SO-modernos.md) oferece o aprofundamento necessário; este relatório apresenta apenas seus principais eixos de estudo.
 
-[Continuar para a Aula 03 →](../Aula-3/README.md)
+**Material complementar:** [Linha do tempo da Aula 01](../Aula-1/Linha-do-tempo.md).

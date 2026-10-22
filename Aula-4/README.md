@@ -1,48 +1,25 @@
-# 🛠️ Aula 04 — Instalação e ramificações de sistemas operacionais
+# 🛠️ Relatório da pasta — Aula 04: instalação e ramificações
 
-[← Aula 03](../Aula-3/README.md) · [Índice da disciplina](../README.md) · [Aula 05 →](../Aula-5/README.md)
+[← Aula 03](../Aula-3/README.md) · [Relatório da disciplina](../README.md) · [Aula 05 →](../Aula-5/README.md)
 
-Esta aula reúne duas atividades: uma relaciona a **instalação do Windows aos conceitos de sistemas operacionais**; a outra investiga influências e tecnologias presentes em diferentes plataformas.
+## 📌 Resumo
 
-## 📂 Atividades disponíveis
+Esta pasta contém **duas atividades sobre sistemas operacionais**. A primeira relaciona a instalação do Windows a conceitos de arquitetura e gerenciamento de recursos; a segunda compara as bases tecnológicas de diferentes plataformas.
 
-| Material | Assunto |
+## 📂 Arquivos analisados
+
+| Arquivo | Conteúdo |
 |---|---|
-| [`Atividade-1.md`](Atividade-1.md) | Processo de instalação do Windows, kernel, processos, arquivos e drivers. |
-| [`Atividade-2.md`](Atividade-2.md) | Comparação de sistemas e suas bases tecnológicas. |
+| [`Atividade-1.md`](Atividade-1.md) | Estudo das etapas de instalação do Windows e sua relação com kernel, processos, memória, dispositivos e arquivos. |
+| [`Atividade-2.md`](Atividade-2.md) | Levantamento de tecnologias e influências presentes em sistemas de diferentes dispositivos. |
+| `README.md` | Relatório resumido dos dois materiais. |
 
-## ⚙️ Atividade 1 — Instalação do Windows
+## 🧠 Síntese das atividades
 
-A atividade descreve as etapas desde a preparação da mídia até a configuração inicial do sistema. O objetivo é relacionar ações práticas de instalação aos seguintes conceitos: componentes do sistema operacional, kernel, modos de execução, processos, diferença entre programa, processo e thread, sistemas de arquivos, entrada e saída e drivers.
+**Atividade 1 — Instalação do Windows.** Descreve o percurso desde a preparação da mídia e a inicialização do computador até a seleção do armazenamento, a instalação de arquivos e a configuração de drivers. As explicações relacionam esse processo a componentes do sistema operacional, modos de execução, processos, threads, sistemas de arquivos e entrada e saída. A atividade possui critérios de avaliação que somam **10 pontos**.
 
-```mermaid
-flowchart LR
-    A["Mídia de instalação"] --> B["Inicialização"]
-    B --> C["Discos e partições"]
-    C --> D["Instalação dos arquivos"]
-    D --> E["Drivers e configuração"]
-```
+**Atividade 2 — Ramificações.** Apresenta uma comparação envolvendo **PlayStation 5, Nintendo Switch, Xbox Series S, Android e Steam Deck**. O documento contém uma tabela e inicia uma representação em árvore, mas não inclui todas as árvores correspondentes aos itens estudados.
 
-### Critérios de avaliação apresentados
+## 🔎 Considerações
 
-| Critério | Pontos |
-|---|---:|
-| Descrição do processo | 2 |
-| Componentes do sistema operacional | 2 |
-| Relação entre os conceitos | 3 |
-| Linha do tempo e tabela | 1 |
-| Desafio final | 1 |
-| Organização e Markdown | 1 |
-| **Total** | **10** |
-
-As explicações e as respostas propostas estão disponíveis no próprio [arquivo da atividade](Atividade-1.md).
-
-> **Atenção:** operações de formatação e particionamento podem apagar arquivos. O estudo deste material não exige modificar discos reais.
-
-## 🌳 Atividade 2 — Ramificações de sistemas
-
-O documento compara tecnologias relacionadas a **PlayStation 5, Nintendo Switch, Xbox Series S, Android e Steam Deck**. Ele apresenta uma tabela e inicia a representação em árvore, mas não contém todas as árvores correspondentes aos sistemas analisados.
-
-Leia o conteúdo disponível em [`Atividade-2.md`](Atividade-2.md), sem presumir que as representações ausentes tenham sido concluídas.
-
-[Continuar para a Aula 05 →](../Aula-5/README.md)
+Os materiais têm finalidade acadêmica. A atividade de instalação **não exige formatar um computador real**: operações de particionamento e formatação podem apagar dados. Para consultar os conceitos detalhados e as questões propostas, leia os arquivos originais da pasta.

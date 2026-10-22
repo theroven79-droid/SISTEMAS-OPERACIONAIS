@@ -1,23 +1,19 @@
-# 📂 Aula 06 — Situação do material
+# 📂 Relatório da pasta — Aula 06
 
-[← Aula 05](../Aula-5/README.md) · [Índice da disciplina](../README.md) · [Aula 07 →](../Aula-7/README.md)
+[← Aula 05](../Aula-5/README.md) · [Relatório da disciplina](../README.md) · [Aula 07 →](../Aula-7/README.md)
 
-## 📌 Conteúdo disponível
+## 📌 Situação do conteúdo
 
-A pasta da Aula 06 contém atualmente **apenas este arquivo `README.md`**. Não foram encontrados, neste diretório, resumos, exercícios ou documentos complementares que permitam identificar com segurança o tema da aula.
+No momento da análise, a pasta `Aula-6` contém **somente este arquivo `README.md`**. Não há outros textos, atividades, programas ou imagens nesta pasta que permitam identificar o tema da aula com segurança.
 
-| Tipo de material | Situação no repositório |
+| Material pesquisado na pasta | Resultado |
 |---|---|
-| Resumo teórico | Não disponível nesta pasta |
-| Exercícios ou atividades | Não disponíveis nesta pasta |
-| Arquivos complementares | Não disponíveis nesta pasta |
+| Resumo teórico | Não encontrado. |
+| Exercícios ou atividades | Não encontrados. |
+| Arquivos complementares | Não encontrados. |
 
-Essa constatação se refere **somente aos arquivos do repositório**, não à realização ou à existência da aula na disciplina.
+## 🔎 Considerações
 
-## 🔗 Navegação
+A ausência de arquivos adicionais no repositório **não significa que a aula não tenha ocorrido**. Significa apenas que não há material específico publicado nesta pasta.
 
-- [Aula 05 — Comparação de distribuições Linux](../Aula-5/README.md)
-- [Aula 07 — Computação em nuvem e monitoramento](../Aula-7/README.md)
-- [Página inicial da disciplina](../README.md)
-
-Quando houver material original para a Aula 06, esta página poderá ser atualizada com referências verificáveis.
+Para acompanhar a sequência do repositório, consulte o [relatório da Aula 05](../Aula-5/README.md), sobre distribuições Linux, e o [relatório da Aula 07](../Aula-7/README.md), sobre sistemas operacionais e computação em nuvem. Nenhum tema ou exercício foi atribuído à Aula 06 sem uma fonte correspondente.

@@ -6,9 +6,9 @@ Os dois materiais desta pasta exploram a estrutura dos sistemas operacionais por
 
 ### 💿 [Atividade 1 — Formatação e instalação do Windows](Atividade-1.md)
 
-Apresenta as etapas que vão da preparação de uma mídia de instalação à primeira inicialização do sistema. Ao longo do percurso, relaciona **boot**, BIOS/UEFI, kernel, processos, threads, memória, sistemas de arquivos, drivers e operações de entrada e saída.
+Apresenta as etapas que vão da preparação de uma mídia de instalação à primeira inicialização do sistema. Ao longo do processo, relaciona **boot**, BIOS/UEFI, kernel, processos, threads, memória, sistemas de arquivos, drivers e operações de entrada e saída.
 
-O documento inclui uma tabela com a sequência da instalação, orientações para elaborar a atividade em Markdown e uma rubrica de avaliação de **10 pontos**. A proposta é compreender o funcionamento do sistema durante a instalação, e não simplesmente reproduzir uma lista de comandos.
+O documento inclui uma tabela com a sequência da instalação, orientações para elaborar a atividade em Markdown e uma rubrica de avaliação de **10 pontos**. A proposta é compreender o funcionamento do sistema durante a instalação, e não apenas reproduzir uma lista de comandos.
 
 ### 🌳 [Atividade 2 — Ramificações dos sistemas operacionais](Atividade-2.md)
 

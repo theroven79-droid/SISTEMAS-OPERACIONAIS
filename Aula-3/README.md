@@ -9,7 +9,7 @@ Esta aula reúne duas frentes de estudo: os diferentes ambientes em que um **sis
 | **Mainframes e servidores** | Processamento de grandes volumes de dados e oferta de serviços. |
 | **Multiprocessadores** | Distribuição do processamento entre vários processadores ou núcleos. |
 | **Computadores pessoais** | Aplicações de uso cotidiano e interação com o usuário. |
-| **Dispositivos móveis** | Smartphones e tablets, com atenção a recursos portáteis. |
+| **Dispositivos móveis** | Smartphones e tablets, com atenção à mobilidade e ao uso eficiente de recursos. |
 | **Embarcados e nós sensores** | Equipamentos dedicados a funções específicas. |
 | **Tempo real** | Aplicações que precisam respeitar prazos de resposta, rígidos ou flexíveis. |
 | **Cartões inteligentes** | Operações em dispositivos com recursos computacionais restritos. |
@@ -30,7 +30,7 @@ git config --global --get user.name
 git config --global --get user.email
 ```
 
-A opção `--global` mantém essas informações na configuração do usuário. Ela não substitui o login ou a autenticação no GitHub.
+A opção `--global` mantém essas informações na configuração do usuário. Essa configuração não substitui o login nem a autenticação no GitHub.
 
 **Referência:** [Documentação do `git config`](https://git-scm.com/docs/git-config).
 

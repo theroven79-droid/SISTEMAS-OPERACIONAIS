@@ -1,10 +1,10 @@
 # 🖥️ Aula 02 — Evolução dos Sistemas Operacionais
 
-Como os computadores passaram das válvulas aos dispositivos móveis? Nesta aula, a evolução do **hardware** é apresentada junto às mudanças na forma de executar programas, compartilhar recursos e interagir com as máquinas.
+Como os computadores passaram das válvulas aos dispositivos móveis? Nesta aula, a evolução do **hardware** é apresentada em conjunto com as mudanças na forma de executar programas, compartilhar recursos e interagir com as máquinas.
 
 ## 📖 Material de estudo
 
-O arquivo [**SO-modernos.md**](SO-modernos.md) reúne um estudo histórico baseado nas seções 1.2.1 a 1.2.5 de *Sistemas Operacionais Modernos*, de **Andrew S. Tanenbaum e Herbert Bos**. Além das explicações, o texto contém uma linha do tempo detalhada e um glossário.
+O arquivo [**SO-modernos.md**](SO-modernos.md) reúne um estudo histórico baseado nas seções 1.2.1 a 1.2.5 de *Sistemas Operacionais Modernos*, de **Andrew S. Tanenbaum e Herbert Bos**. O texto também contém uma linha do tempo detalhada e um glossário.
 
 ## 🧭 Percurso histórico
 

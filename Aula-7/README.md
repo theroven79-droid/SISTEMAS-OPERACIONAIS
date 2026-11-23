@@ -16,7 +16,7 @@ Nesta aula, o estudo de sistemas operacionais sai da teoria e chega a uma aplica
 - **Computação em nuvem:** publicação da aplicação e observação das características do ambiente remoto.
 - **Comparação de ambientes:** estudo das diferenças entre uma execução local e serviços de hospedagem, incluindo a proposta de experimentar um segundo provedor.
 
-O NEXUS OS apresenta os dados **da máquina ou do contêiner em que a aplicação está sendo executada**, e não do dispositivo que abre a página no navegador.
+O NEXUS OS apresenta os dados **da máquina ou do contêiner no qual a aplicação é executada**, e não do dispositivo que abre a página no navegador.
 
 ## 🌐 Projeto publicado
 

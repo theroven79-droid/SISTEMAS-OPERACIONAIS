@@ -1,6 +1,6 @@
 # 🐧 Aula 05 — Conhecendo Distribuições Linux
 
-Uma comparação de **cinco distribuições Linux** com propostas de uso diferentes. O estudo reúne características gerais de cada sistema e uma avaliação qualitativa para relacioná-los a perfis de usuários e atividades.
+Esta aula apresenta uma comparação de **cinco distribuições Linux** com propostas de uso diferentes. O estudo reúne características gerais de cada sistema e uma avaliação qualitativa para relacioná-los a perfis de usuários e atividades.
 
 ## 🖥️ Distribuições estudadas
 
@@ -14,7 +14,7 @@ Uma comparação de **cinco distribuições Linux** com propostas de uso diferen
 
 ## 📊 Comparação dos critérios
 
-As notas abaixo vão de **1 a 5** e representam a avaliação **didática e qualitativa** registrada na atividade, não resultados de testes de desempenho.
+As notas abaixo vão de **1 a 5** e representam a avaliação **didática e qualitativa** registrada na atividade, e não resultados de testes de desempenho.
 
 | Critério | Kali | Lubuntu | Zorin | Mint | Fedora |
 |---|---:|---:|---:|---:|---:|

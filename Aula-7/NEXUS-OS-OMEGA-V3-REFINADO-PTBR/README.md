@@ -1,6 +1,6 @@
 # 📊 NEXUS OS Omega V3
 
-**Um dashboard para acompanhar o ambiente em que uma aplicação Node.js está rodando.**
+**Um dashboard para acompanhar o ambiente em que uma aplicação Node.js está em execução.**
 
 O **NEXUS OS Omega V3** reúne métricas do sistema operacional, do processo Node.js e do servidor HTTP em uma interface web em português. O painel organiza esses dados em indicadores, gráficos e visualizações que ajudam a comparar o comportamento da aplicação em diferentes ambientes.
 
@@ -16,7 +16,7 @@ O **NEXUS OS Omega V3** reúne métricas do sistema operacional, do processo Nod
 | **📁 Projeto e armazenamento** | Contagem de arquivos do projeto e informações de armazenamento quando disponíveis. |
 | **📈 Análises e relatórios** | Históricos, alertas visuais, exportação em JSON e CSV e comparação entre relatórios importados. |
 
-A interface oferece **cinco temas de cores**, controles de visualização e uma **paleta de comandos com `Ctrl + K`**. Os dados são atualizados por *Server-Sent Events* (SSE), com alternativa de consultas periódicas.
+A interface oferece **cinco temas de cores**, controles de visualização e uma **paleta de comandos com `Ctrl + K`**. Os dados são atualizados por *Server-Sent Events* (SSE), com a opção de realizar consultas periódicas.
 
 ## 🛠️ Tecnologias
 
@@ -45,7 +45,7 @@ npm ci
 npm start
 ```
 
-A aplicação utiliza a porta **3000** por padrão, ou a porta definida na variável de ambiente `PORT`. Depois de iniciar, abra `http://localhost:3000` no navegador.
+A aplicação utiliza a porta **3000** por padrão, ou a porta definida na variável de ambiente `PORT`. Após iniciar a aplicação, abra `http://localhost:3000` no navegador.
 
 ## 🔗 Dados disponibilizados
 

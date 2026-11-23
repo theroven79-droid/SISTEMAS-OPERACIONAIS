@@ -1,6 +1,6 @@
 # 💻 Sistemas Operacionais
 
-Este repositório reúne anotações, atividades e projetos desenvolvidos durante os estudos de **Sistemas Operacionais**. Os materiais estão organizados por aula e acompanham temas que vão da evolução da computação ao monitoramento de servidores na nuvem.
+Este repositório reúne anotações, atividades e projetos desenvolvidos durante os estudos de **Sistemas Operacionais**. Os materiais estão organizados por aula e abrangem temas que vão da evolução da computação ao monitoramento de servidores na nuvem.
 
 ## 📚 Conteúdo das aulas
 
@@ -18,7 +18,7 @@ Este repositório reúne anotações, atividades e projetos desenvolvidos durant
 
 Na **Aula 07**, os conceitos de sistemas operacionais ganham uma aplicação prática com o [NEXUS OS Omega V3](Aula-7/NEXUS-OS-OMEGA-V3-REFINADO-PTBR/README.md), um painel web desenvolvido em **Node.js e Express**.
 
-O dashboard apresenta informações do ambiente em que o servidor está executando, como uso de CPU e memória, processos, rede e métricas das requisições HTTP. A proposta da aula também relaciona a execução local à hospedagem na nuvem, permitindo estudar as diferenças entre esses ambientes.
+O dashboard apresenta informações do ambiente em que a aplicação é executada, como uso de CPU e memória, processos, rede e métricas das requisições HTTP. A proposta da aula também relaciona a execução local à hospedagem na nuvem, permitindo estudar as diferenças entre esses ambientes.
 
 ## 🎓 Sobre a disciplina
 
